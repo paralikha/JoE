@@ -1,0 +1,118 @@
+//section_about_us
+.about_box {
+    display: flex;
+    background: #fff;
+    width: auto;
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
+	   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
+			box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
+	
+	// tab
+
+	.about_tab {
+	    padding: 70px 20px;
+
+	    .tab-content h2 {
+	    	color: $primary;
+	    	text-transform: uppercase;
+	    	margin-bottom: 10px;
+	    	text-align: left;
+	    }
+
+	    .tab-content img {
+	    	margin-bottom: 1em;
+	    	text-align: center;
+	    	max-width: 100%;
+	    	width: auto;
+	    }
+
+	    .j_1 img {
+		    width: 100%;
+		}
+
+	}
+
+	// title
+	.edge--top {
+	    position: absolute;
+	    z-index: 1;
+	    top: -20px;
+	    left: -40px;
+	    padding: 10px 30px;
+	}
+
+	.edge--top:before {
+		background: inherit;
+		content: '';
+		display: block;
+		height: 50%;
+		left: 0;
+		position: absolute;
+		right: 0;
+		z-index: -1;
+		-webkit-backface-visibility: hidden;
+	}
+
+	.edge--top:before {
+		top: 0;
+		-webkit-transform: skewY(1.5deg);
+		transform: skewY(1.5deg);
+		-webkit-transform-origin: 100% 0;
+		transform-origin: 100% 0;
+	}
+
+	.-bg {
+		background: $primary;
+	}
+
+	.nav-tabs {
+	    border-bottom: none;
+
+	    .nav-item {
+			float: none !important;
+			margin-bottom: 10px;
+		}
+
+	    .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.open .nav-link, .nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-item.open .nav-link:hover {
+		    background-color: transparent;
+		    border-color: transparent;
+		}
+
+		.nav-link.active {
+			font-weight: $bold;
+		    border-bottom: 2px solid $secondary;
+		    display: inline-block;
+		}
+
+		.nav-link {
+			border: none;
+		}
+
+		.nav-item a {
+			color: $dark_gray;
+			text-transform: uppercase;
+		}
+	}
+
+	.border-right {
+		border-right: 2px solid $secondary;
+	}
+}
+
+//section_program
+section#program {
+	background-image: url(../resources/images/prog_bg.jpg);
+    background-size: 30%;
+    background-repeat-x: repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .program_box {
+	    background: rgba(255,255,255,0.75);
+	    padding: 20px;
+	}
+}
