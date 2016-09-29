@@ -6176,6 +6176,18 @@ p {
   text-align: center;
 }
 
+.float-r {
+  float: right;
+}
+
+.-bg_violet {
+  background: #6e266f;
+}
+
+.-bg_yellow {
+  background: #fdbe3c;
+}
+
 #nav_header .navbar-brand {
   background: #fff;
   border-radius: 0 0 20px 20px;
@@ -6200,17 +6212,25 @@ p {
   margin-left: 2rem;
 }
 
+section#about_us {
+  background: url(../resources/images/rocket_1.png) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
 .about_box {
+  padding: 40px;
   display: -ms-flexbox;
   display: flex;
   background: #fff;
-  width: auto;
+  width: 100%;
   position: relative;
   border-radius: 10px;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
 }
 .about_box .about_tab {
-  padding: 70px 20px;
+  position: relative;
 }
 .about_box .about_tab .tab-content h2 {
   color: #6e266f;
@@ -6226,15 +6246,16 @@ p {
 }
 .about_box .about_tab .j_1 img {
   width: 100%;
+  max-width: 150px;
 }
-.about_box .edge--top {
+.about_box .edge_top {
   position: absolute;
   z-index: 1;
   top: -20px;
   left: -40px;
   padding: 10px 30px;
 }
-.about_box .edge--top:before {
+.about_box .edge_top:before {
   background: inherit;
   content: '';
   display: block;
@@ -6245,13 +6266,30 @@ p {
   z-index: -1;
   -webkit-backface-visibility: hidden;
 }
-.about_box .edge--top:before {
+.about_box .edge_top:before {
   top: 0;
   transform: skewY(1.5deg);
   transform-origin: 100% 0;
 }
-.about_box .-bg {
-  background: #6e266f;
+.about_box .edge_top_relative {
+  position: relative;
+  z-index: 1;
+}
+.about_box .edge_top_relative:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.about_box .edge_top_relative:before {
+  top: 0;
+  transform: skewY(3.5deg);
+  transform-origin: 100% 0;
 }
 .about_box .nav-tabs {
   border-bottom: none;
@@ -6273,11 +6311,36 @@ p {
   border: none;
 }
 .about_box .nav-tabs .nav-item a {
+  padding-left: 0;
+  padding-right: 0;
   color: #373636;
   text-transform: uppercase;
 }
-.about_box .border-right {
-  border-right: 2px solid #fdbe3c;
+
+.op h2
+.oc h2 {
+  margin-bottom: 20px;
+}
+
+.edge_top_relative {
+  width: auto;
+  padding: 6px 12px;
+  display: inline-block;
+}
+
+.edge_top_relative p {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.p_margin {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.margin20 {
+  margin-top: 20px;
 }
 
 section#program {
@@ -6289,9 +6352,95 @@ section#program {
   overflow: hidden;
   position: relative;
 }
+section#program .outter:before,
+section#program .outter:after,
+section#program .inner:before,
+section#program .inner:after {
+  background: #179;
+}
+section#program .inner {
+  border-color: #179;
+}
+section#program .outter {
+  position: relative;
+  top: 100px;
+  left: 45%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  z-index: 10;
+}
+section#program .outter:before,
+section#program .outter:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 2px;
+  height: 86px;
+  margin-top: -41px;
+  z-index: 1;
+}
+section#program .outter:after {
+  left: auto;
+  right: 0;
+  margin-top: -45px;
+  height: 92px;
+}
+section#program .inner {
+  position: absolute;
+  top: 0px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.25);
+  border-width: 2px;
+  border-style: solid;
+  -webkit-transform: rotate(45deg);
+}
+section#program .inner:before,
+section#program .inner:after {
+  -webkit-transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 85px;
+  margin-top: -41px;
+  z-index: 1;
+  right: auto;
+  left: 27px;
+  bottom: auto;
+  top: 27px;
+}
+section#program .inner:after {
+  height: 90px;
+  right: 30px;
+  left: auto;
+  bottom: -13px;
+  top: auto;
+}
 section#program .program_box {
   background: rgba(255, 255, 255, 0.75);
-  padding: 20px;
+  padding: 100px 40px 40px 40px;
+}
+section#program .program_box input.age {
+  border-radius: 5px;
+  padding: 7px;
+  border: 1px solid #373636;
+  width: 60px;
+  margin-left: 140px;
+}
+section#program .program_box select.program {
+  border-radius: 5px;
+  padding: 7px;
+  border: 1px solid #373636;
+  width: 280px;
+  margin-left: 10px;
+}
+
+.divider_bg {
+  background: #373636;
+  height: 20px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {

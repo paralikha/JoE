@@ -109,3 +109,15 @@ p {
 .center {
 	text-align: center;
 }
+
+.float-r {
+	float: right;
+}
+
+.-bg_violet {
+	background: $primary;
+}
+
+.-bg_yellow {
+	background: $secondary;
+}

@@ -1,8 +1,19 @@
 //section_about_us
+section#about_us {
+	background: url(../resources/images/rocket_1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
 .about_box {
+    padding: 40px;
     display: flex;
     background: #fff;
-    width: auto;
+    width: 100%;
     position: relative;
     border-radius: 10px;
     -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
@@ -12,7 +23,7 @@
 	// tab
 
 	.about_tab {
-	    padding: 70px 20px;
+	    position: relative;
 
 	    .tab-content h2 {
 	    	color: $primary;
@@ -30,12 +41,13 @@
 
 	    .j_1 img {
 		    width: 100%;
+		    max-width: 150px;
 		}
 
 	}
 
 	// title
-	.edge--top {
+	.edge_top {
 	    position: absolute;
 	    z-index: 1;
 	    top: -20px;
@@ -43,7 +55,7 @@
 	    padding: 10px 30px;
 	}
 
-	.edge--top:before {
+	.edge_top:before {
 		background: inherit;
 		content: '';
 		display: block;
@@ -55,7 +67,7 @@
 		-webkit-backface-visibility: hidden;
 	}
 
-	.edge--top:before {
+	.edge_top:before {
 		top: 0;
 		-webkit-transform: skewY(1.5deg);
 		transform: skewY(1.5deg);
@@ -63,8 +75,29 @@
 		transform-origin: 100% 0;
 	}
 
-	.-bg {
-		background: $primary;
+	.edge_top_relative {
+	  	position: relative;
+	  	z-index: 1;
+	}
+
+	.edge_top_relative:before {
+	  	background: inherit;
+	  	content: '';
+	  	display: block;
+	  	height: 50%;
+	  	left: 0;
+	  	position: absolute;
+	  	right: 0;
+	  	z-index: -1;
+	  	-webkit-backface-visibility: hidden;
+	}
+
+	.edge_top_relative:before {
+	  	top: 0;
+	  	-webkit-transform: skewY(3.5deg);
+	          	transform: skewY(3.5deg);
+	 	 -webkit-transform-origin: 100% 0;
+	          	 transform-origin: 100% 0;
 	}
 
 	.nav-tabs {
@@ -91,14 +124,42 @@
 		}
 
 		.nav-item a {
+			padding-left: 0;
+    		padding-right: 0;
 			color: $dark_gray;
 			text-transform: uppercase;
 		}
 	}
 
 	.border-right {
-		border-right: 2px solid $secondary;
+		// border-right: 2px solid $secondary;
 	}
+}
+
+.op h2
+.oc h2 {
+	margin-bottom: 20px;
+}
+
+.edge_top_relative {
+    width: auto;
+    padding: 6px 12px;
+    display: inline-block;
+}
+
+.edge_top_relative p {
+	margin-bottom: 0;
+	color: $white;
+    font-weight: 700;
+}
+
+.p_margin {
+	margin-left: 20px;
+    margin-top: 20px;
+}
+
+.margin20 {
+    margin-top: 20px;
 }
 
 //section_program
@@ -111,8 +172,100 @@ section#program {
     overflow: hidden;
     position: relative;
 
+    
+    .outter:before,
+	.outter:after,
+	.inner:before,
+	.inner:after { background: #179; }
+	.inner { border-color: #179 }
+
+	.outter {
+	  	position: relative;
+	  	top: 100px;
+	  	left: 45%;
+	  	width: 200px;
+	  	height: 200px;
+	  	overflow: hidden;
+	  	z-index: 10;
+	}
+
+	.outter:before,
+	.outter:after {
+	  	content: "";
+	  	position: absolute;
+	  	left: 0;
+	  	top: 50%;
+	  	width: 2px;
+	  	height: 86px;
+	  	margin-top: -41px;
+	  	z-index: 1;
+	}
+
+	.outter:after {
+	  	left: auto;
+	  	right: 0;
+	  	margin-top: -45px;
+	  	height: 92px;
+	}
+
+	.inner {
+	  	position: absolute;
+	  	top: 0px;
+	  	width: 200px;
+	  	height: 200px;
+	  	background: rgba(255,255,255,.25);
+	  	border-width: 2px;
+	  	border-style: solid;
+	  	-webkit-transform: rotate(45deg);
+	}
+
+	.inner:before,
+	.inner:after {
+	  	-webkit-transform: rotate(45deg);
+	  	content: "";
+	  	position: absolute;
+	  	width: 2px;
+	  	height: 85px;
+	  	margin-top: -41px;
+	  	z-index: 1;
+	  	right: auto;
+	  	left: 27px;
+	  	bottom: auto;
+	  	top: 27px;
+	}
+
+	.inner:after {
+	  	height: 90px;
+	  	right: 30px;
+	  	left: auto;
+	  	bottom: -13px;
+	  	top: auto;
+	}
+
     .program_box {
 	    background: rgba(255,255,255,0.75);
-	    padding: 20px;
+	    padding: 100px 40px 40px 40px;
+
+	    input.age {
+		    border-radius: 5px;
+		    padding: 7px;
+		    border: 1px solid $dark_gray;
+		    width: 60px;
+		    margin-left: 140px;
+		}
+
+		select.program {
+		    border-radius: 5px;
+		    padding: 7px;
+		    border: 1px solid $dark_gray;
+		    width: 280px;
+		    margin-left: 10px;
+		}
 	}
+}
+
+.divider_bg {
+	background: $dark_gray;
+	height: 20px;
+	width: 100%;
 }
