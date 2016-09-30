@@ -24,6 +24,7 @@ section#about_us {
 
 	.about_tab {
 	    position: relative;
+	    min-height: 500px;
 
 	    .tab-content h2 {
 	    	color: $primary;
@@ -35,8 +36,8 @@ section#about_us {
 	    .tab-content img {
 	    	margin-bottom: 1em;
 	    	text-align: center;
-	    	max-width: 100%;
-	    	width: auto;
+	    	max-width: 160px;
+	    	width: 100%;
 	    }
 
 	    .j_1 img {
@@ -44,60 +45,6 @@ section#about_us {
 		    max-width: 150px;
 		}
 
-	}
-
-	// title
-	.edge_top {
-	    position: absolute;
-	    z-index: 1;
-	    top: -20px;
-	    left: -40px;
-	    padding: 10px 30px;
-	}
-
-	.edge_top:before {
-		background: inherit;
-		content: '';
-		display: block;
-		height: 50%;
-		left: 0;
-		position: absolute;
-		right: 0;
-		z-index: -1;
-		-webkit-backface-visibility: hidden;
-	}
-
-	.edge_top:before {
-		top: 0;
-		-webkit-transform: skewY(3.5deg);
-		transform: skewY(1.5deg);
-		-webkit-transform-origin: 100% 0;
-		transform-origin: 100% 0;
-	}
-
-	.edge_top_relative {
-	  	position: relative;
-	  	z-index: 1;
-	}
-
-	.edge_top_relative:before {
-	  	background: inherit;
-	  	content: '';
-	  	display: block;
-	  	height: 50%;
-	  	left: 0;
-	  	position: absolute;
-	  	right: 0;
-	  	z-index: -1;
-	  	-webkit-backface-visibility: hidden;
-	}
-
-	.edge_top_relative:before {
-	  	top: 0;
-	  	-webkit-transform: skewY(3.5deg);
-	          	transform: skewY(3.5deg);
-	 	 -webkit-transform-origin: 100% 0;
-	          	 transform-origin: 100% 0;
 	}
 
 	.nav-tabs {
@@ -152,6 +99,59 @@ section#about_us {
 	color: $white;
     font-weight: 700;
 }
+// title
+.edge_top {
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: -40px;
+    padding: 10px 30px;
+}
+
+.edge_top:before {
+	background: inherit;
+	content: '';
+	display: block;
+	height: 50%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	-webkit-backface-visibility: hidden;
+}
+
+.edge_top:before {
+	top: 0;
+	-webkit-transform: skewY(3.5deg);
+	transform: skewY(3.5deg);
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.edge_top_relative {
+  	position: relative;
+  	z-index: 1;
+}
+
+.edge_top_relative:before {
+  	background: inherit;
+  	content: '';
+  	display: block;
+  	height: 50%;
+  	left: 0;
+  	position: absolute;
+  	right: 0;
+  	z-index: -1;
+  	-webkit-backface-visibility: hidden;
+}
+
+.edge_top_relative:before {
+  	top: 0;
+  	-webkit-transform: skewY(3.5deg);
+          	transform: skewY(3.5deg);
+ 	 -webkit-transform-origin: 100% 0;
+          	 transform-origin: 100% 0;
+}
 
 .p_margin {
 	margin-left: 20px;
@@ -165,42 +165,4 @@ section#about_us {
 
 .margin40 {
     margin-top: 40px;
-}
-
-//section_program
-section#program {
-	background-image: url(../resources/images/prog_bg.jpg);
-    background-size: 30%;
-    background-repeat-x: repeat;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-
-    .program_box {
-	    background: rgba(255,255,255,0.75);
-	    padding: 90px 40px 40px 40px;
-
-	    input.age {
-		    border-radius: 5px;
-		    padding: 7px;
-		    border: 1px solid $dark_gray;
-		    width: 60px;
-		    margin-left: 140px;
-		}
-
-		select.program {
-		    border-radius: 5px;
-		    padding: 7px;
-		    border: 1px solid $dark_gray;
-		    width: 280px;
-		    margin-left: 10px;
-		}
-	}
-}
-
-.divider_bg {
-	background: $dark_gray;
-	height: 20px;
-	width: 100%;
 }

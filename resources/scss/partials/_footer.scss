@@ -1,0 +1,56 @@
+footer {
+	background: $primary;
+
+	h2 {
+		text-transform: uppercase;
+	}
+
+	h3 {
+		font-size: 14px;
+    	color: $white;
+    	margin-bottom: 0;
+	}
+
+	p {
+		color: $white;
+		font-size: 12px;
+	}
+
+	ul {
+	    list-style: none;
+	    padding: 0;
+	}
+
+	ul li {
+		line-height: 18px;
+	}
+
+	ul li a {
+	    color: $white;
+	    font-size: 12px;
+	}
+
+	a:hover {
+		color: $secondary;
+	}
+
+	.footer_input {
+		a {
+			font-size: 12px;
+		    padding: 5px 15px;
+		    background: $secondary;
+		    float: right;
+		    margin-top: 10px;
+		    color: $white;
+		}
+
+		p {
+			margin-bottom: 8px;
+		}
+	}
+
+	input {
+		width: 100%;
+		border: none;
+	}
+}

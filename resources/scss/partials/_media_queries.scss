@@ -1,5 +1,19 @@
 @media only screen and (max-width: 768px) {
 	.wrapper {
-		padding: 10px;
+		padding: 40px 5px;
+	}
+
+	.about_box {
+		padding: 70px 20px;
+		padding-bottom: 20px;
+
+		.about_tab {
+			min-height: 0;
+			margin-bottom: 40px;
+		}
+
+		.j_1_img {
+			display: none;
+		}
 	}
 }

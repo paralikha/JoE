@@ -49,10 +49,11 @@ input[type="email"]:-ms-input-placeholder {
 
 html, body {
 	font-family: $font-family;
-	-webkit-transition: 0.4s;
-	   -moz-transition: 0.4s;
-	     -o-transition: 0.4s;
-	    	transition: 0.4s;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+	    	transition: all .2s linear;
+	    	transition: all .2s linear;
 }
 
 body {
@@ -60,10 +61,11 @@ body {
 	border-top: 8px solid $primary;
 	background: #c5c5c5;
 	height: 100%;
-	-webkit-transition: 0.4s;
-	   -moz-transition: 0.4s;
-	     -o-transition: 0.4s;
-	    	transition: 0.4s;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+	    	transition: all .2s linear;
+	    	transition: all .2s linear;
 }
 
 h1 {
@@ -72,10 +74,10 @@ h1 {
 	color: $dark_gray;
 	font-size: $h1;
 	text-transform: uppercase;
-	-webkit-transition: 0.4s;
-	   -moz-transition: 0.4s;
-	     -o-transition: 0.4s;
-	        transition: 0.4s;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+	        transition: all .2s linear;
 }
 
 h2 {
@@ -83,10 +85,10 @@ h2 {
 	font-weight: $bold;
 	color: $white;
 	font-size: $h2;
-	-webkit-transition: 0.4s;
-	   -moz-transition: 0.4s;
-	     -o-transition: 0.4s;
-	        transition: 0.4s;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+	        transition: all .2s linear;
 }
 
 p {
@@ -99,6 +101,7 @@ p {
 	padding: 60px;
 	margin: 0 auto;
 	display: -webkit-box;
+	transition: all .2s linear;
 }
 
 .container {
@@ -130,5 +133,17 @@ p {
 }
 
 .margin_b {
-	margin-bottom: 30px;
+	margin-bottom: 30px !important;
+}
+
+.j_1_img {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    width: 100%;
+    max-width: 90px;
+}
+
+.clear {
+	clear: both;
 }

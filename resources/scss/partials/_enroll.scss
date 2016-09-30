@@ -1,0 +1,124 @@
+//section_program
+section#enroll {
+	background-image: url(../resources/images/prog_bg.jpg);
+    background-size: 30%;
+    background-repeat-x: repeat;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .enroll_box {
+	    background: rgba(255,255,255,0.75);
+	    padding: 90px 40px 40px 40px;
+
+	    input.age {
+		    border-radius: 5px;
+		    padding: 7px;
+		    border: 1px solid $dark_gray;
+		    width: 60px;
+		    margin-left: 140px;
+		}
+
+		select.enroll {
+		    border-radius: 5px;
+		    padding: 7px;
+		    border: 1px solid $dark_gray;
+		    width: 280px;
+		    margin-left: 10px;
+		}
+	}
+}
+
+.divider_bg {
+	background: $dark_gray;
+	height: 20px;
+	width: 100%;
+}
+
+// 
+
+.joe_action_link {
+    position: relative;
+}
+
+.joe_action_link .spin {
+    background: url('../resources/images/ready_joe.png') no-repeat;
+    background-size: 293px auto;
+    height: 295px;
+    position: relative;
+    text-align: center;
+    width: 293px;
+}
+.joe_action_link a, 
+.joe_action_link
+.joe_action_link .title {
+    color: #ffdc1a;
+    display: inline-block;
+    font-size: 50px;
+    font-size: 5.0rem;
+    font-weight: 900;
+    line-height: 46px;
+    line-height: 4.6rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.joe_action_link
+.field-item {
+    height: 295px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 293px;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.joe_action_link
+.field-item:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -.25em;
+}
+
+.spin:hover {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.spin {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+}
+
+span.title {
+	color: $white;
+    display: inline-block;
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.enroll_box .edge_top {
+	background: $secondary;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    -webkit-transform: translateX(-50%) translatey(-50%);
+    -moz-transform: translateX(-50%) translatey(-50%);
+    transform: translateX(-50%) translatey(-50%);
+
+    h2 {
+    	color: $dark_gray;
+    	font-weight: $heavy;
+    }
+}
