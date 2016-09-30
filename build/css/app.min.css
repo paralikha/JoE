@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: File to import not found or unreadable: mixins/commons.\A         on line 1 of resources/scss/app.scss\A \A 1: @import \"mixins/commons\";\A 2: @import \"mixins/overlays\";\A 3: \A 4: @import \"variables\";\A 5: // @import \"../../node_modules/bootstrap/scss/bootstrap\";\A 6: "}

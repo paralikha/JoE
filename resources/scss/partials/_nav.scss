@@ -1,0 +1,31 @@
+#nav_header {
+
+	.navbar-brand {
+	    background: #fff;
+	    border-radius: 0 0 20px 20px;
+	}
+
+	.navbar-brand img {
+	    width: 150px;
+	}
+
+	ul li a {
+	    color: $dark_gray;
+	    text-transform: uppercase;
+	    font-weight: $bold;
+	}
+
+	ul li a:hover {
+		color: $primary;
+	}
+
+	ul {
+	    background: #ffffff;
+	    padding: 10px 25px;
+	    border-radius: 0 0 20px 20px;
+	}
+
+	.navbar-nav .nav-item + .nav-item {
+	    margin-left: 2rem;
+	}
+}
