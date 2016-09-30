@@ -1,16 +1,18 @@
 /*
-Error: File to import not found or unreadable: mixins/commons.
-        on line 1 of resources/scss/app.scss
+Error: File to import not found or unreadable: ../../vendor/bootstrap/scss/bootstrap.
+        on line 3 of resources/scss/app.scss
 
-1: @import "mixins/commons";
-2: @import "mixins/overlays";
-3: 
-4: @import "variables";
-5: // @import "../../node_modules/bootstrap/scss/bootstrap";
-6: 
+1: @import "variables";
+2: 
+3: @import "../../vendor/bootstrap/scss/bootstrap";
+4: 
+5: @import "global";
+6: @import "partials/nav";
+7: @import "partials/about";
+8: @import "partials/_media_queries";
 
 Backtrace:
-resources/scss/app.scss:1
+resources/scss/app.scss:3
 C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
 C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -52,4 +54,4 @@ C:/Ruby23/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: mixins/commons.\A         on line 1 of resources/scss/app.scss\A \A 1: @import \"mixins/commons\";\A 2: @import \"mixins/overlays\";\A 3: \A 4: @import \"variables\";\A 5: // @import \"../../node_modules/bootstrap/scss/bootstrap\";\A 6: "; }
+  content: "Error: File to import not found or unreadable: ../../vendor/bootstrap/scss/bootstrap.\A         on line 3 of resources/scss/app.scss\A \A 1: @import \"variables\";\A 2: \A 3: @import \"../../vendor/bootstrap/scss/bootstrap\";\A 4: \A 5: @import \"global\";\A 6: @import \"partials/nav\";\A 7: @import \"partials/about\";\A 8: @import \"partials/_media_queries\";"; }
