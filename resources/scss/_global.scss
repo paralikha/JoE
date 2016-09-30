@@ -91,7 +91,6 @@ h2 {
 
 p {
 	font-family: $font-family;
-	font-weight: $light;
 	color: $dark_gray;
 	font-size: $paragraph;
 }
@@ -120,4 +119,16 @@ p {
 
 .-bg_yellow {
 	background: $secondary;
+}
+
+.white {
+	color: $white;
+}
+
+.dark {
+	color: $dark_gray;
+}
+
+.margin_b {
+	margin-bottom: 30px;
 }

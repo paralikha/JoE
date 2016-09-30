@@ -10,7 +10,7 @@ section#about_us {
 }
 
 .about_box {
-    padding: 40px;
+    padding: 70px 40px;
     display: flex;
     background: #fff;
     width: 100%;
@@ -69,7 +69,7 @@ section#about_us {
 
 	.edge_top:before {
 		top: 0;
-		-webkit-transform: skewY(1.5deg);
+		-webkit-transform: skewY(3.5deg);
 		transform: skewY(1.5deg);
 		-webkit-transform-origin: 100% 0;
 		transform-origin: 100% 0;
@@ -115,7 +115,7 @@ section#about_us {
 
 		.nav-link.active {
 			font-weight: $bold;
-		    border-bottom: 2px solid $secondary;
+		    border-bottom: 4px solid $secondary;
 		    display: inline-block;
 		}
 
@@ -162,6 +162,11 @@ section#about_us {
     margin-top: 20px;
 }
 
+
+.margin40 {
+    margin-top: 40px;
+}
+
 //section_program
 section#program {
 	background-image: url(../resources/images/prog_bg.jpg);
@@ -172,79 +177,9 @@ section#program {
     overflow: hidden;
     position: relative;
 
-    
-    .outter:before,
-	.outter:after,
-	.inner:before,
-	.inner:after { background: #179; }
-	.inner { border-color: #179 }
-
-	.outter {
-	  	position: relative;
-	  	top: 100px;
-	  	left: 45%;
-	  	width: 200px;
-	  	height: 200px;
-	  	overflow: hidden;
-	  	z-index: 10;
-	}
-
-	.outter:before,
-	.outter:after {
-	  	content: "";
-	  	position: absolute;
-	  	left: 0;
-	  	top: 50%;
-	  	width: 2px;
-	  	height: 86px;
-	  	margin-top: -41px;
-	  	z-index: 1;
-	}
-
-	.outter:after {
-	  	left: auto;
-	  	right: 0;
-	  	margin-top: -45px;
-	  	height: 92px;
-	}
-
-	.inner {
-	  	position: absolute;
-	  	top: 0px;
-	  	width: 200px;
-	  	height: 200px;
-	  	background: rgba(255,255,255,.25);
-	  	border-width: 2px;
-	  	border-style: solid;
-	  	-webkit-transform: rotate(45deg);
-	}
-
-	.inner:before,
-	.inner:after {
-	  	-webkit-transform: rotate(45deg);
-	  	content: "";
-	  	position: absolute;
-	  	width: 2px;
-	  	height: 85px;
-	  	margin-top: -41px;
-	  	z-index: 1;
-	  	right: auto;
-	  	left: 27px;
-	  	bottom: auto;
-	  	top: 27px;
-	}
-
-	.inner:after {
-	  	height: 90px;
-	  	right: 30px;
-	  	left: auto;
-	  	bottom: -13px;
-	  	top: auto;
-	}
-
     .program_box {
 	    background: rgba(255,255,255,0.75);
-	    padding: 100px 40px 40px 40px;
+	    padding: 90px 40px 40px 40px;
 
 	    input.age {
 		    border-radius: 5px;
