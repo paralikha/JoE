@@ -6133,7 +6133,6 @@ html, body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  border-top: 8px solid #6e266f;
   background: #c5c5c5;
   height: 100%;
   transition: all .2s linear;
@@ -6238,11 +6237,64 @@ p {
   margin-left: 2rem;
 }
 
+#nav_header .bg-faded {
+  background-color: transparent;
+  position: fixed;
+  z-index: 99;
+}
+#nav_header .navbar-fixed-top .float-l {
+  width: 30%;
+}
+#nav_header .navbar-fixed-top .float-r {
+  width: 70%;
+}
+#nav_header .navbar-fixed-top .navbar_links ul {
+  list-style: none;
+  background: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+#nav_header .navbar-fixed-top .navbar_links ul li {
+  display: inline;
+}
+#nav_header .navbar-fixed-top .navbar_links ul li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #373636;
+  padding: 21px 11px;
+}
+#nav_header .navbar-fixed-top .navbar-brand {
+  padding: 0;
+}
+#nav_header .navbar-fixed-top .navbar-brand img {
+  background: #fff;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+}
+#nav_header .navbar-fixed-top img {
+  width: 100%;
+  max-width: 150px;
+}
+
+#fixed_border {
+  background: #6e266f;
+  height: 8px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+
 section#about_us {
   background: url(../resources/images/rocket_1.png) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
   position: relative;
+  padding-top: 100px;
 }
 
 .about_box {
@@ -6259,6 +6311,9 @@ section#about_us {
   position: relative;
   min-height: 500px;
 }
+.about_box .about_tab .ceo_img {
+  max-width: 250px;
+}
 .about_box .about_tab .tab-content h2 {
   color: #6e266f;
   text-transform: uppercase;
@@ -6268,7 +6323,6 @@ section#about_us {
 .about_box .about_tab .tab-content img {
   margin-bottom: 1em;
   text-align: center;
-  max-width: 160px;
   width: 100%;
 }
 .about_box .about_tab .j_1 img {
@@ -6395,7 +6449,6 @@ section#about_us {
 
 .j_sched img {
   width: 100%;
-  max-width: 250px;
 }
 
 .j_sched_icon {
@@ -6421,7 +6474,6 @@ section#about_us {
 
 .j_contact img {
   width: 100%;
-  max-width: 250px;
 }
 .j_contact span {
   color: #6e266f;
@@ -6437,7 +6489,6 @@ section#about_us {
 
 .j_registration img {
   width: 100%;
-  max-width: 250px;
 }
 .j_registration a {
   color: #373636;
@@ -6464,6 +6515,15 @@ section#about_us {
   .about_box .j_1_img {
     display: none;
   }
+  .about_box .nav-tabs {
+    text-align: center;
+  }
+
+  .joe_action_link a,
+  .joe_action_link
+  .joe_action_link .title {
+    margin-bottom: 40px;
+  }
 }
 section#enroll {
   background-image: url(../resources/images/prog_bg.jpg);
@@ -6477,6 +6537,7 @@ section#enroll {
 section#enroll .enroll_box {
   background: rgba(255, 255, 255, 0.75);
   padding: 90px 40px 40px 40px;
+  position: relative;
 }
 section#enroll .enroll_box input.age {
   border-radius: 5px;
@@ -6570,12 +6631,13 @@ span.title {
   background: #fdbe3c;
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 5%;
   transform: translateX(-50%) translatey(-50%);
 }
 .enroll_box .edge_top h2 {
   color: #373636;
   font-weight: 900;
+  font-size: 20px !important;
 }
 
 footer {
@@ -6621,4 +6683,5 @@ footer .footer_input p {
 footer input {
   width: 100%;
   border: none;
+  border-radius: 0 !important;
 }

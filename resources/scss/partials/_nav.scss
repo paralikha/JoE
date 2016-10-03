@@ -29,3 +29,71 @@
 	    margin-left: 2rem;
 	}
 }
+
+// 2nd nav
+
+#nav_header {
+	.bg-faded {
+	    background-color: transparent;
+	    position: fixed;
+    	z-index: 99;	
+    }
+
+    .navbar-fixed-top {
+    	.float-l {
+    		width: 30%;
+    	}
+
+    	.float-r {
+    		width: 70%;
+    	}
+
+    	.navbar_links {
+    		ul {
+				list-style: none;
+			    background: $white;
+			    padding: 20px;
+			    text-align: center;
+			    border-radius: 0 0 20px 20px;
+
+				li {
+					display: inline;
+
+					a {
+					    text-transform: uppercase;
+					    font-weight: 700;
+					    color: $dark_gray;
+				        padding: 21px 11px;
+					}
+				}
+    		}
+    	}
+
+    	.navbar-brand {
+    		padding: 0;
+
+    		img {
+    			background: #fff;
+			    padding: 10px;
+			    border-radius: 0 0 20px 20px;
+    		}
+    	}
+    }
+	
+	.navbar-fixed-top img {
+		width: 100%;
+		max-width: 150px;
+	}
+}
+
+#fixed_border {
+	background: $primary;
+    height: 8px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}

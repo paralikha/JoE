@@ -1,12 +1,14 @@
 //section_about_us
 section#about_us {
 	background: url(../resources/images/rocket_1.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+ 	-webkit-background-size: cover;
+  	   -moz-background-size: cover;
+  		 -o-background-size: cover;
+  			background-size: cover;
     overflow: hidden;
     position: relative;
+    padding-top: 100px;
+
 }
 
 .about_box {
@@ -25,6 +27,10 @@ section#about_us {
 	.about_tab {
 	    position: relative;
 	    min-height: 500px;
+		
+		.ceo_img {
+			max-width: 250px;
+		}
 
 	    .tab-content h2 {
 	    	color: $primary;
@@ -36,7 +42,6 @@ section#about_us {
 	    .tab-content img {
 	    	margin-bottom: 1em;
 	    	text-align: center;
-	    	max-width: 160px;
 	    	width: 100%;
 	    }
 
