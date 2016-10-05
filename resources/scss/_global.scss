@@ -47,7 +47,8 @@ input[type="email"]:-ms-input-placeholder {
     color: $dark_gray;  
 }
 
-html, body {
+body, html {
+	height: 100%;
 	font-family: $font-family;
 	-webkit-transition: all .2s linear;
 	   -moz-transition: all .2s linear;
@@ -60,6 +61,7 @@ body {
 	font-family: $font-family;
 	background: #c5c5c5;
 	height: 100%;
+	color: $paragraph;
 	-webkit-transition: all .2s linear;
 	   -moz-transition: all .2s linear;
 	     -o-transition: all .2s linear;
@@ -99,12 +101,11 @@ p {
 .wrapper {
 	padding: 60px;
 	margin: 0 auto;
-	display: -webkit-box;
 	transition: all .2s linear;
 }
 
 .container {
-    max-width: 1366px;
+    // max-width: 1366px;
 }
 
 .center {
@@ -115,12 +116,28 @@ p {
 	float: right;
 }
 
+.primary {
+	color: $primary;
+}
+
+.dark_gray {
+	color: $dark_gray;
+}
+
 .-bg_violet {
 	background: $primary;
 }
 
+.-bg_gray {
+	background: $dark_gray;
+}
+
 .-bg_yellow {
 	background: $secondary;
+}
+
+.-bg_white {
+	background: $white;
 }
 
 .white {
@@ -145,4 +162,10 @@ p {
 
 .clear {
 	clear: both;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.35);
+       -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.35);
+    		box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.35);
 }

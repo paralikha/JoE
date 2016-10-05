@@ -3,6 +3,10 @@
 		padding: 40px 5px;
 	}
 
+	.navbar_links {
+		display: none;
+	}
+
 	.about_box {
 		padding: 70px 20px;
 		padding-bottom: 20px;
@@ -25,5 +29,15 @@
 	.joe_action_link
 	.joe_action_link .title {
 		margin-bottom: 40px;
+	}
+
+	.ready_joe {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.nav_collapse {
+		display: none;
 	}
 }

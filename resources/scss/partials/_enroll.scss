@@ -12,6 +12,7 @@ section#enroll {
 	    background: rgba(255,255,255,0.75);
 	    padding: 90px 40px 40px 40px;
         position: relative;
+        border-radius: 0.25rem;
 
 	    input.age {
 		    border-radius: 5px;
@@ -31,6 +32,10 @@ section#enroll {
 	}
 }
 
+.ready_joe {
+    margin-top: 60px;
+}
+
 .divider_bg {
 	background: $dark_gray;
 	height: 20px;
@@ -45,11 +50,11 @@ section#enroll {
 
 .joe_action_link .spin {
     background: url('../resources/images/ready_joe.png') no-repeat;
-    background-size: 293px auto;
-    height: 295px;
+    background-size: 300px auto;
+    height: 300px;
     position: relative;
     text-align: center;
-    width: 293px;
+    width: 300px;
 }
 .joe_action_link a, 
 .joe_action_link
@@ -67,12 +72,11 @@ section#enroll {
 
 .joe_action_link
 .field-item {
-    height: 295px;
+    height: 300px;
     position: absolute;
     top: 0;
-    left: 0;
     text-align: center;
-    width: 293px;
+    width: 300px;
     pointer-events: none;
     cursor: pointer;
 }
@@ -88,8 +92,8 @@ section#enroll {
 
 .spin:hover {
     -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 .spin {
@@ -102,8 +106,8 @@ section#enroll {
 span.title {
 	color: $white;
     display: inline-block;
-    font-size: 44px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 40px;
     font-weight: 900;
     text-transform: uppercase;
     vertical-align: middle;
@@ -121,6 +125,24 @@ span.title {
     h2 {
     	color: $dark_gray;
     	font-weight: $heavy;
-        font-size: 20px !important;
+        font-size: 17px !important;
     }
+}
+
+.programs_btn {
+    font-size: 12px;
+    text-decoration: underline !Important;
+}
+
+.joe_btn {
+    background: $primary;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+    color: $white;
+    font-weight: $bold;
+}
+
+.joe_btn:hover,.joe_btn:focus,
+.joe_btn:active {
+    color: $white;
 }
