@@ -10,37 +10,89 @@
 </head>
 
 <body>
-	<div id="fixed_border"></div>
-
 	<section id="about_us">
 		<div id="nav_header">
-			<div class="container">
+			<div class="width1200">
 				<nav>
 			    	<button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">☰</button>
 					<a class="navbar-brand" href="#"><img src="resources/images/brand_logo.png" alt=""></a>
 					<div class="collapse navbar-toggleable-xs" id="navbar-header">
 						<ul class="nav navbar-nav pull-xs-right">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
-							<li class="nav-item">
-								<a class="nav-link" href="about.html">About Us</a></li>
-							<li class="nav-item">
-								<a class="nav-link" href="programs.html">Programmes</a></li>
-							<li class="nav-item">
-								<a class="nav-link" href="schedule.html">Schedule</a></li>
-							<li class="nav-item">
-								<a class="nav-link" href="news_events.html">News &amp; Events </a></li>
-							<li class="nav-item">
-								<a class="nav-link" href="contact.html">Contact</a></li>
-							<li class="nav-item">
-								<a class="nav-link" href="registration.html">Let's Joe!</a></li>
+                            	<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                        	<li class="nav-item dropdown">
+					    		<a class="nav-link" role="button" href="about.html">About Us</a>
+				    			<ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop2">
+			                        <li class="nav-item">
+			                            <div class="nav-menu-links nav-link">
+			                            	<ul>
+			                            		<li><a href="#">Ceo's MEssage</a></li>
+			                            		<li><a href="#">Vision &amp; Mission</a></li>
+			                            		<li><a href="#">Our Personality</a></li>
+			                            		<li><a href="#">Our Centres</a></li>
+			                            		<li><a href="#">Our Intructors</a></li>
+			                            	</ul>
+			                            </div>
+			                        </li>
+			                        <li class="nav-item">
+			                            <div class="center nav-link">
+			                            	<p><strong>Ceo's Message</strong></p>
+			                            	<img src="resources/images/ceo.png" width="100" alt="">
+			                            	<p>Mr.Suhaimi Salleh</p>
+			                            </div>
+			                        </li>
+			                        <li class="nav-item width280">
+			                            <div class="nav-link">
+			                            	<p>“Apart from financial literacy, it is also an important responsibility for parents to help their children grow emotionally and socially. We are certain that every single one of them has the ability and the potential to add value to the lives of others, in one way or another by being civil and responsible citizens of the world…”
+			                            	</p>
+			                            	<a class="float-r" href="#">read more..</a>
+			                            </div>
+			                        </li>
+						    	</ul>
+						  	</li>
+	                        <li class="nav-item dropdown">
+	                            <a class="nav-link" role="button" href="programs.html">Programmes</a>
+				    			<ul id="menu2" class="center dropdown-menu" role="menu" aria-labelledby="drop2">
+			                        <li class="nav-item">
+			                            <a href="#">
+			                            	<img style="width:150px;" src="resources/images/jhb/jhb_1.png" alt="">
+			                            	<p>JOE HOLIDAY <br>BOOTCAMP</p>
+			                            </a>
+			                        </li>
+			                        <li class="nav-item">
+			                            <a href="#">
+			                           		<img style="width:150px;" src="resources/images/jhb/jhb_2.png" alt="">
+			                           		<p>JOE FAST TRACK</p>
+			                           	</a>
+			                        </li>
+			                        <li class="nav-item">
+			                            <a href="#">
+			                            	<img style="width:150px;" src="resources/images/jhb/jhb_3.png" alt="">
+			                            	<p>JOE@SCHOOL <br>(coming soon)</p>
+			                            </a>
+			                        </li>
+						    	</ul>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="schedule.html">Schedule</a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="news_events.html">News &amp; Events </a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="contact.html">Contact</a>
+	                        </li>
+	                        <li class="-bg_yellow nav-item">
+	                            <a class="nav-link" href="registration.html">Let's Joe!</a>
+	                        </li>
 						</ul>
 					</div>
 				</nav>
 			</div>
 		</div>
-		<div class="container">
-			<div class="wrapper">
+		<div class="wrapper">
+			<div class="container">
 				<div class="about_box">
 					<div class="block -bg_violet edge_top">
 					  	<h2>About Us</h2>
@@ -172,7 +224,7 @@
 			</div>
 		</div>
 	</section>
-
+	
 	<div class="divider_bg"></div>
 	<div class="clear"></div>
 
@@ -277,6 +329,7 @@
 	<script src="resources/js/jquery.min.js"></script>
     <script src="resources/js/tether.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/custom.js"></script>
 
 </body>
 </html>

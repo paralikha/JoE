@@ -4,7 +4,7 @@
 	}
 
 	.navbar_links {
-		display: none;
+		// display: none;
 	}
 
 	.about_box {
@@ -34,10 +34,34 @@
 	.ready_joe {
 		display: none;
 	}
+	
+	.phases_content {
+
+		ul li {
+			margin-right: 0 !important;
+		}
+
+		.rocket_bg1,
+		.rocket_bg2,
+		.rocket_bg3 {
+			display: none;
+		}
+	}
+
+	#learn_joe li {
+		margin-right: 0 !important;
+	}
+	
 }
 
-@media only screen and (min-width: 769px) {
-	.nav_collapse {
+@media only screen and (min-width: 1020px) {
+	.popopo {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1019px) {
+	.width1200 {
 		display: none;
 	}
 }

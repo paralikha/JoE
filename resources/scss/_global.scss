@@ -59,7 +59,7 @@ body, html {
 
 body {
 	font-family: $font-family;
-	background: #c5c5c5;
+	background: $white;
 	height: 100%;
 	color: $paragraph;
 	-webkit-transition: all .2s linear;
@@ -96,16 +96,27 @@ p {
 	font-family: $font-family;
 	color: $dark_gray;
 	font-size: $paragraph;
+	-webkit-transition: 0.4s;
+	   -moz-transition: 0.4s;
+	  	 -o-transition: 0.4s;
+	    	transition: 0.4s;
 }
 
 .wrapper {
-	padding: 60px;
+	padding: 60px 30px;
 	margin: 0 auto;
 	transition: all .2s linear;
+	-webkit-transition: 0.4s;
+	   -moz-transition: 0.4s;
+	  	 -o-transition: 0.4s;
+	    	transition: 0.4s;
 }
 
 .container {
-    // max-width: 1366px;
+    -webkit-transition: 0.4s;
+	   -moz-transition: 0.4s;
+	  	 -o-transition: 0.4s;
+	    	transition: 0.4s;
 }
 
 .center {
