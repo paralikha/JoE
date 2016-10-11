@@ -7121,6 +7121,11 @@ p {
   -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.35); }
 
+.nicescroll-rails div {
+  border: 0 !important;
+  background: #fdbe3c !important;
+  opacity: 0.5 !important; }
+
 #nav_header {
   border-top: 8px solid #6e266f; }
   #nav_header .width1200 {
@@ -7142,6 +7147,8 @@ p {
   #nav_header ul {
     background: #ffffff;
     border-radius: 0 0 20px 20px; }
+    #nav_header ul li:first-child {
+      margin-left: 1em; }
   #nav_header li:last-child {
     border-radius: 0 0 20px 0; }
   #nav_header .navbar-nav .nav-item {
