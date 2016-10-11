@@ -142,3 +142,42 @@
 		}
 	}
 }
+
+#nav_collapse {
+	text-align: center;
+	border-radius: 0;
+
+	button {
+		position: absolute;
+	    right: 10px;
+    	top: 40px;
+	}
+
+	.bg-inverse {
+	    background-color: transparent;
+
+	    ul {
+		    list-style: none;
+		    padding: 0;
+		    margin-bottom: 0;
+
+		    li {
+			    margin-bottom: 20px;
+
+			    a {
+				    color: $dark_gray;
+				    font-size: 25px;
+				}
+
+				a:hover {
+					color: $primary;
+				}
+			}
+
+			li:last-child {
+				margin-bottom: 0;
+				background: $secondary;
+			}
+		}
+	}
+}

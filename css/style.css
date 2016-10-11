@@ -5024,6 +5024,30 @@ p {
       margin-bottom: 0;
       line-height: 20px; }
 
+#nav_collapse {
+  text-align: center;
+  border-radius: 0; }
+  #nav_collapse button {
+    position: absolute;
+    right: 10px;
+    top: 40px; }
+  #nav_collapse .bg-inverse {
+    background-color: transparent; }
+    #nav_collapse .bg-inverse ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0; }
+      #nav_collapse .bg-inverse ul li {
+        margin-bottom: 20px; }
+        #nav_collapse .bg-inverse ul li a {
+          color: #373636;
+          font-size: 25px; }
+        #nav_collapse .bg-inverse ul li a:hover {
+          color: #6e266f; }
+      #nav_collapse .bg-inverse ul li:last-child {
+        margin-bottom: 0;
+        background: #fdbe3c; }
+
 .about_box.home {
   padding: 40px; }
 
