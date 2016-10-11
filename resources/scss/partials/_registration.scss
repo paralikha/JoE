@@ -1,0 +1,15 @@
+.j_registration {
+	img {
+	    width: 100%;
+	}
+
+	a {
+	    color: $dark_gray;
+	    font-weight: 700;
+	}
+
+	a:hover {
+	    color: $white;
+	    transition: all .2s linear;
+	}
+}

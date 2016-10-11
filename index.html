@@ -3,34 +3,389 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Template</title>
+    <title>JoE | Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="manifest.json">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#febe4a">
-	<meta name="theme-color" content="#ffffff">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="resources/css/animate.css">
+    <link rel="stylesheet" href="resources/css/imagehover.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
 </head>
+
 <body>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <noscript>
-    	Javascript must be enabled to run this site properly.
-    </noscript>
+    <section id="about_us">
+        <nav id="nav_collapse" class="navbar navbar-light bg-faded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <img src="resources/images/brand_logo.png"  width="130" alt="">
+            <div class="collapse" id="exCollapsingNavbar">
+                <div class="bg-inverse p-a-1">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Programme</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">News &amp; Events</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Let's Joe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="nav_header">
+            <div class="width1200">
+                <nav>
+                    <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">☰</button>
+                    <a class="navbar-brand" href="#"><img src="resources/images/brand_logo.png" alt=""></a>
+                    <div class="collapse navbar-toggleable-xs" id="navbar-header">
+                        <ul class="nav navbar-nav pull-xs-right">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" role="button" href="about.html">About Us</a>
+                                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                                    <li class="nav-item">
+                                        <div class="nav-menu-links nav-link">
+                                            <ul>
+                                            <li>ul</li>
+                                                <li><a href="#">Ceo's MEssage</a></li>
+                                                <li><a href="#">Vision &amp; Mission</a></li>
+                                                <li><a href="#">Our Personality</a></li>
+                                                <li><a href="#">Our Centres</a></li>
+                                                <li><a href="#">Our Intructors</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="center nav-link">
+                                            <p>Ceo's Message</p>
+                                            <img src="resources/images/ceo.png" width="100" alt="">
+                                            <p>Mr.Suhaimi Salleh</p>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item width280">
+                                        <div class="nav-link">
+                                            <p>“Apart from financial literacy, it is also an important responsibility for parents to help their children grow emotionally and socially. We are certain that every single one of them has the ability and the potential to add value to the lives of others, in one way or another by being civil and responsible citizens of the world…”
+                                            </p>
+                                            <a class="float-r" href="#">read more..</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" role="button" href="programs.html">Programmes</a>
+                                <ul id="menu2" class="center dropdown-menu" role="menu" aria-labelledby="drop2">
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            <img style="width:150px;" src="resources/images/jhb/jhb_1.png" alt="">
+                                            <p>JOE HOLIDAY <br>BOOTCAMP</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            <img style="width:150px;" src="resources/images/jhb/jhb_2.png" alt="">
+                                            <p>JOE FAST TRACK</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            <img style="width:150px;" src="resources/images/jhb/jhb_3.png" alt="">
+                                            <p>JOE@SCHOOL <br>(coming soon)</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="schedule.html">Schedule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="news_events.html">News &amp; Events </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="-bg_yellow nav-item">
+                                <a class="nav-link" href="registration.html">Let's Joe!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="about_box home">
+                    <div class="row">
+                        <div class="col-md-3 hero_image">
+                            <div class="hero_box gray">
+                                <p>“Apart from financial literacy, it is also an important responsibility for parents to help their children grow emotionally and socially. We are certain that every single ”</p>
+                                <p class="primary"><strong>-CEO's Message</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hero_box center yellow">
+                                <h2>Who said <span>adults</span> <br> only can be <br> entrepreneurs?</h2>
+                                <h2 class="second -bg_violet">Your child could be the next <br> Mark Zuckerberg.</h2>
+                                <div class="clear"></div>
+                                <h2 class="third -bg_white">Enrol now!</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="hero_box transform no_pattern">
+                                <h2 class="transform">JOE is a holistic <br> <span>4-phased</span> programme designed for tweens and teen-agers. </h2>
+                                <a class="float-r" href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
 
 
+                    <div class="clear"></div>
+                    <div class="gray">
+                        <div class="row">
+                            <div class="hero_bottom">
+                                <div class="col-md-5">
+                                    <img src="resources/images/hero_img.jpg" alt="">
+                                    <a href="news_events.html">See more photos</a>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="hero_text">
+                                        <img src="resources/images/rocket_2.png" alt="rocket_2">
+                                        <h1 class="dark_gray">Launch your child's <span class="primary">entrepreneurship</span> journey now!</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="phases">
+        <div class="wrapper -bg_violet">
+            <div class="container">
+                <div class="center title">
+                    <h2>What's special about <span>JOE</span> is that it focuses on both </h2>
+                    <h1>PERSONAL DEVELOPMENT &amp; FINANCIAL LITERACY</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="phases">
+        <div class="wrapper -bg_gray">
+            <div class="container">
+                <div class="phases_content">
+                <h2>What we learn in JOE</h2>
+                    <ul>
+                        <li>
+                            <p>Phase 1</p>
+                            <div class="border_sample">
+                                <figure class="imghvr-flip-vert">
+                                    <img src="resources/images/icons/p_1.png" alt="">
+                                    <figcaption>
+                                        <img src="resources/images/icons/hover_bg.png" alt="">
+                                        <p>Creativity <br>
+                                        Passion <br>
+                                        Perseverance <br>
+                                        Risk-Taking <br>
+                                        Innovation <br>
+                                        Envisioning <br>
+                                        Ethics </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Phase 2</p>
+                            <div class="border_sample">
+                                <figure class="imghvr-flip-vert">
+                                    <img src="resources/images/icons/p_2.png" alt="">
+                                    <figcaption>
+                                        <img src="resources/images/icons/hover_bg.png" alt="">
+                                        <p>Teamwork <br>
+                                        Communication <br>
+                                        Networking <br>
+                                        Presentation <br>
+                                        Negotiation <br>
+                                        Time Management
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Phase 3</p>
+                            <div class="border_sample">
+                                <figure class="imghvr-flip-vert">
+                                    <img src="resources/images/icons/p_3.png" alt="">
+                                    <figcaption>
+                                        <img src="resources/images/icons/hover_bg.png" alt="">
+                                        <p>Basic Economics <br>
+                                        Basic Business <br>
+                                        Competition <br>
+                                        Marketing <br>
+                                        Financial Planning<br>
+                                        Business Planning
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Phase 4</p>
+                            <div class="border_sample">
+                                <figure class="imghvr-flip-vert">
+                                    <img src="resources/images/icons/p_4.png" alt="">
+                                    <figcaption>
+                                        <img src="resources/images/features/img_1.jpg" alt="">
+                                        <p class="caption">Putting knowledge into application</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <img class="rocket_bg1" src="resources/images/rocket_bg.png" alt="">
+                    <img class="rocket_bg2" src="resources/images/rocket_bg.png" alt="">
+                    <img class="rocket_bg3" src="resources/images/rocket_bg.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="featured_img">
+        <div class="row no-gutter">
+            <div class="col-md-4"><img src="resources/images/features/img_1.jpg" alt=""></div>
+            <div class="col-md-4"><img src="resources/images/features/img_3.jpg" alt=""></div>
+            <div class="col-md-4"><img src="resources/images/features/img_1.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <section id="learn_joe">
+        <div class="container">
+            <div class="wrapper">
+                <div class="learn_joe_content">
+                    <img class="rocket" src="resources/images/rocket_bg.png" width="100" alt="">
+                    <div class="margin_b margin30 -bg_violet edge_top_relative"><h1>How we learn in JOE</h1></div>
+                    <h2>Learning is made fun at JOE! <br> Many of its activities are experiential-based to create <br> the best learning environment.</h2>
+
+                    <ul>
+                        <li><img src="resources/images/learn/1.png" alt=""> <p>Idea Journal</p></li>
+                        <li><img src="resources/images/learn/2.png" alt=""> <p>Storytelling</p></li>
+                        <li><img src="resources/images/learn/3.png" alt=""> <p>Teamwork</p></li>
+                        <li><img src="resources/images/learn/4.png" alt=""> <p>Video Screening</p></li>
+                        <li><img src="resources/images/learn/5.png" alt=""> <p>Problem-Solving</p></li>
+                        <li><img src="resources/images/learn/6.png" alt=""> <p>Application</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="enroll">
+        <div class="container">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="ready_joe">
+                            <div class="joe_action_link">
+                                <div class="field-items">
+                                    <div class="spin"></div>
+                                    <div class="field-item"><span class="title">Ready? Let's Joe!</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="enroll_box margin40">
+                            <div class="block -bg_violet edge_top">
+                                <h2>Choose a JOE <br> Programme today!</h2>
+                            </div>
+
+                            <div class="enroll_content">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleSelect1"><p>My child's age</p></label>
+                                        <select class="form-control" id="exampleSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleSelect1"><p>I would like to enroll my child for</p></label>
+                                        <select class="form-control" id="exampleSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </form>
+
+                                <a class="programs_btn" href="#">Our Programmes</a>
+                                <a class="joe_btn float-r" href="#">Let's JOE!</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Joe</h2>
+                        <p>An entrepreneurship and financial literacy programme that focuses on the personal development of teens and tweens.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Be Part of JOE</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Terms of Services</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Find us here!</h3>
+                                <ul>
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer_input">
+                            <p>Register to our mailing</p>
+                            <input class="form-control" type="text">
+                            <a href="#">Join!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-
+    <script src="resources/js/jquery.min.js"></script>
+    <script src="resources/js/tether.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/custom.js"></script>
 
 </body>
 </html>

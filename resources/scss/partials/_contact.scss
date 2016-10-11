@@ -1,0 +1,19 @@
+.j_contact {
+	img {
+	    width: 100%;
+	}
+
+	span {
+		color: $primary;
+		font-weight: $bold;
+	}
+
+	a {
+		display: inline-block;
+	}
+
+	a img {
+		width: 100%;
+		max-width: 70px;
+	}
+}

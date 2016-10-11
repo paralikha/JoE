@@ -7,3 +7,21 @@
 @import "resets";
 
 @import "partials/scrollbars";
+
+@import "variables";
+
+@import "../../vendor/bootstrap/scss/bootstrap";
+
+@import "global";
+@import "partials/nav";
+@import "partials/home";
+@import "partials/about";
+@import "partials/programs";
+@import "partials/schedule";
+@import "partials/n&e";
+@import "partials/contact";
+@import "partials/registration";
+@import "partials/media_queries";
+@import "partials/enroll";
+@import "partials/footer";
+

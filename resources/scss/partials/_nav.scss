@@ -1,0 +1,183 @@
+#nav_header {
+	border-top: 8px solid $primary;
+
+	.width1200 {
+	    max-width: 1200px;
+	    margin: 0 auto;
+	    width: 100%;
+	}
+
+	.navbar-brand {
+	    background: $white;
+	    border-radius: 0 0 20px 20px;
+	}
+
+	.navbar-brand img {
+	    width: 150px;
+	}
+
+	ul li a {
+	    color: $dark_gray;
+	    font-size: 20px;
+	    text-transform: uppercase;
+	    font-weight: $bold;
+	}
+
+	ul li a:hover {
+		color: $primary;
+	}
+
+	ul {
+	    background: $white;
+	    border-radius: 0 0 20px 20px;
+	}
+
+	li:last-child {
+		// background: $secondary;
+		border-radius: 0 0 20px 0;
+	}
+
+	.navbar-nav .nav-item {
+	    padding: 10px;
+	}
+}
+
+#fixed_border {
+	background: $primary;
+    height: 8px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#menu1 {
+	border-radius: 0 !important;
+	left: -80px;
+	width: 750px;
+	padding: 10px;
+
+	li.width280 {
+		width: 350px;
+
+		.nav-link {
+			a {
+				color: $primary;
+				text-transform: lowercase;
+			}
+
+			p {
+				font-weight: 300;
+    			font-size: 17px;
+			}
+		} 
+	}
+
+	li {
+		margin-right: 1rem;
+
+		img {
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 17px;
+		}
+	}
+
+	.nav-menu-links ul {
+		list-style: none;
+		padding: 0;
+
+		li {
+			padding: 10px 0;
+			border-bottom: 1px solid $secondary;
+
+			h2 {
+				color: $dark_gray !important;
+			}
+
+			a {
+				font-weight: 300;
+    			font-size: 14px;
+			}
+		}
+
+		li:nth-child(1) {
+			padding-top: 0;
+		}
+
+		li:last-child {
+			border-radius: 0 !important;
+		}
+	}
+}
+
+#menu2 {
+	border-radius: 0 !important;
+	left: -80px;
+	width: 600px;
+	padding: 10px;
+
+	.nav-item {
+		margin-right: 10px;
+
+		a {
+			display: block;
+
+			img {
+				margin-bottom: 20px;
+				width: 100%;
+				min-width: 100px !important;
+			}
+		}
+
+		p {
+			font-weight: $semi-light;
+			margin-bottom: 0;
+			line-height: 20px;
+		}
+	}
+}
+
+#nav_collapse {
+	text-align: center;
+	border-radius: 0;
+
+	button {
+		position: absolute;
+	    right: 10px;
+    	top: 40px;
+	}
+
+	.bg-inverse {
+	    background-color: transparent;
+
+	    ul {
+		    list-style: none;
+		    padding: 0;
+		    margin-bottom: 0;
+
+		    li {
+			    margin-bottom: 20px;
+
+			    a {
+				    color: $dark_gray;
+				    font-size: 25px;
+				}
+
+				a:hover {
+					color: $primary;
+				}
+			}
+
+			li:last-child {
+				margin-bottom: 0;
+				background: $secondary;
+			}
+		}
+	}
+}
