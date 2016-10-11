@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "delicious";
+  src: url("../resources/fonts/delicious/delicious-heavy.woff") format("woff");
+}
+@font-face {
+  font-family: "print";
+  src: url("../resources/fonts/print/PrintBold-webfont.eot");
+  src: url("../resources/fonts/print/PrintBold-webfont.eot?#iefix") format("embedded-opentype"), url("../resources/fonts/print/PrintBold-webfont.woff") format("woff"), url("../resources/fonts/print/PrintBold-webfont.ttf") format("truetype"), url("../resources/fonts/print/PrintBold-webfont.svg#print_boldregular") format("svg");
+}
+@font-face {
+  font-family: "gothic";
+  src: url("../resources/fonts/franklin/franklin_demi_cond.ttf") format("truetype");
+}
 /*!
  * Bootstrap v4.0.0-alpha.3 (http://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors
@@ -6127,31 +6140,31 @@ input[type="email"]:-ms-input-placeholder {
 
 body, html {
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "print", Arial, Helvetica, sans-serif;
   transition: all .2s linear;
   transition: all .2s linear;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "print", Arial, Helvetica, sans-serif;
   background: #ffffff;
   height: 100%;
-  color: 16px;
+  color: 20px;
   transition: all .2s linear;
   transition: all .2s linear;
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "delicious", Arial, Helvetica, sans-serif;
   font-weight: 900;
   color: #373636;
-  font-size: 39px;
+  font-size: 40px;
   text-transform: uppercase;
   transition: all .2s linear;
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "delicious", Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: #ffffff;
   font-size: 25px;
@@ -6159,9 +6172,9 @@ h2 {
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "print", Arial, Helvetica, sans-serif;
   color: #373636;
-  font-size: 16px;
+  font-size: 20px;
   transition: 0.4s;
 }
 
@@ -6253,6 +6266,7 @@ p {
 }
 #nav_header ul li a {
   color: #373636;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -6297,7 +6311,7 @@ p {
 }
 #menu1 li.width280 .nav-link p {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 17px;
 }
 #menu1 li {
   margin-right: 1rem;
@@ -6306,7 +6320,7 @@ p {
   margin-bottom: 10px;
 }
 #menu1 li p {
-  font-size: 14px;
+  font-size: 17px;
 }
 #menu1 .nav-menu-links ul {
   list-style: none;
@@ -6361,20 +6375,27 @@ p {
   border-top: 5px solid #6e266f;
   padding: 25px 15px 15px 15px;
   margin-bottom: 30px;
+  min-height: 320px;
+  background-image: url("../resources/images/pattern.png") !important;
 }
-.hero_box h2 {
+.hero_box h2:first-child {
   color: #373636;
   margin-bottom: 20px;
-  font-size: 20px;
+  text-transform: uppercase;
 }
-.hero_box h2 span {
+.hero_box h2:first-child span {
   font-size: 40px;
   text-transform: uppercase;
   color: #6e266f;
 }
+.hero_box .transform {
+  text-transform: none !important;
+}
 .hero_box .second {
   color: #ffffff;
-  padding: 20px;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .hero_box .second h2 {
   color: #ffffff !important;
@@ -6383,13 +6404,18 @@ p {
   padding: 10px;
   display: inline-block;
   text-transform: uppercase;
+  color: #373636;
 }
 .hero_box a {
+  font-family: "delicious", Arial, Helvetica, sans-serif;
   background: #fdbe3c;
   color: #373636;
   border-radius: 0.25em;
   padding: 5px 10px;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
+}
+
+.no_pattern {
+  background-image: none !important;
 }
 
 .gray {
@@ -6404,6 +6430,7 @@ p {
   width: 100%;
 }
 .hero_bottom a {
+  font-family: "delicious", Arial, Helvetica, sans-serif;
   position: absolute;
   bottom: 40px;
   right: 15px;
@@ -6421,7 +6448,7 @@ p {
   float: right;
   max-width: 150px;
 }
-.hero_bottom .hero_text h2 {
+.hero_bottom .hero_text h1 {
   position: absolute;
   top: 50%;
   left: 35%;
@@ -6451,6 +6478,7 @@ p {
   background: #fdbe3c;
   display: inline-block;
   padding: 10px 20px;
+  font-family: "gothic", Arial, Helvetica, sans-serif !important;
 }
 #phases .phases_content ul {
   margin-top: 40px;
@@ -6463,8 +6491,10 @@ p {
   width: 200px;
 }
 #phases .phases_content ul li p {
+  margin-bottom: 0;
   color: #fdbe3c;
   font-weight: 700;
+  font-family: "gothic", Arial, Helvetica, sans-serif !important;
 }
 #phases .phases_content ul li .border {
   position: relative;
@@ -6508,8 +6538,7 @@ p {
   width: 200px;
   padding: 10px;
   color: #ffffff !important;
-  font-size: 12px;
-  font-weight: 400 !important;
+  font-size: 13px;
 }
 #phases .phases_content figure figcaption .caption {
   padding: 10px;
@@ -6524,6 +6553,10 @@ p {
 }
 #phases .phases_content figure figcaption img {
   height: 150px;
+}
+#phases .phases_content figure figcaption p {
+  font-size: 14px;
+  font-family: "print", Arial, Helvetica, sans-serif !important;
 }
 #phases .phases_content figure:before {
   content: '';
@@ -6579,10 +6612,20 @@ p {
   text-align: center;
   position: relative;
 }
-#learn_joe .rocket {
+#learn_joe .learn_joe_content {
+  position: relative;
+}
+#learn_joe .learn_joe_content .rocket {
   position: absolute;
-  right: 300px;
-  width: 100px;
+  right: 0;
+}
+#learn_joe h1 {
+  color: #ffffff;
+  font-family: "gothic", Arial, Helvetica, sans-serif !important;
+  text-transform: none;
+}
+#learn_joe h2 {
+  color: #373636;
 }
 #learn_joe ul {
   list-style: none;
@@ -6591,7 +6634,6 @@ p {
 }
 #learn_joe ul li {
   display: inline-block;
-  margin-bottom: 30px;
   width: 140px;
 }
 #learn_joe ul li img {
@@ -6601,7 +6643,8 @@ p {
   margin-top: 10px;
   color: #6e266f;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: "gothic";
 }
 
 section#about_us {
@@ -6616,7 +6659,6 @@ section#about_us {
   background: #fff;
   width: 100%;
   position: relative;
-  border-radius: 10px;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
 }
 .about_box .about_tab {
@@ -6627,6 +6669,7 @@ section#about_us {
   max-width: 250px;
 }
 .about_box .about_tab .tab-content h2 {
+  font-family: "gothic", Arial, Helvetica, sans-serif;
   color: #6e266f;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -6742,6 +6785,10 @@ section#about_us {
   margin-top: 20px;
 }
 
+.margin30 {
+  margin-top: 30px;
+}
+
 .margin40 {
   margin-top: 40px;
 }
@@ -6753,6 +6800,7 @@ section#about_us {
 .j_program a {
   color: #373636;
   font-weight: 700;
+  font-family: "gothic", Arial, Helvetica, sans-serif;
 }
 
 .j_program a:hover {
@@ -6866,6 +6914,10 @@ section#about_us {
     text-align: center;
   }
 
+  #learn_joe ul li {
+    margin-bottom: 30px;
+  }
+
   .joe_action_link a,
   .joe_action_link
   .joe_action_link .title {
@@ -6888,9 +6940,13 @@ section#about_us {
   #learn_joe li {
     margin-right: 0 !important;
   }
+
+  #learn_joe .rocket {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1020px) {
-  .popopo {
+  #nav_collapse {
     display: none;
   }
 }
@@ -6998,11 +7054,12 @@ section#enroll .enroll_box select.enroll {
 span.title {
   color: #ffffff;
   display: inline-block;
-  font-size: 34px;
+  font-size: 44px;
   line-height: 40px;
   font-weight: 900;
   text-transform: uppercase;
   vertical-align: middle;
+  font-family: "gothic", Arial, Helvetica, sans-serif;
 }
 
 .enroll_box .edge_top {
@@ -7015,11 +7072,15 @@ span.title {
 .enroll_box .edge_top h2 {
   color: #373636;
   font-weight: 900;
-  font-size: 17px !important;
+  font-family: "gothic", Arial, Helvetica, sans-serif;
+}
+
+.enroll_content .form-group p {
+  font-family: "gothic", Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
 }
 
 .programs_btn {
-  font-size: 12px;
   text-decoration: underline !Important;
 }
 
@@ -7029,11 +7090,17 @@ span.title {
   border-radius: 0.25rem;
   color: #ffffff;
   font-weight: 700;
+  font-family: "gothic", Arial, Helvetica, sans-serif;
 }
 
 .joe_btn:hover, .joe_btn:focus,
 .joe_btn:active {
   color: #ffffff;
+}
+
+.form-control {
+  box-shadow: inset 2px 2px 2px 0px #dddddd;
+  border: 1px solid #aaa;
 }
 
 footer {
@@ -7049,7 +7116,7 @@ footer h3 {
 }
 footer p {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 16px;
 }
 footer ul {
   list-style: none;
@@ -7060,7 +7127,7 @@ footer ul li {
 }
 footer ul li a {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 16px;
 }
 footer a:hover {
   color: #fdbe3c;

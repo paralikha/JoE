@@ -106,11 +106,12 @@ section#enroll {
 span.title {
 	color: $white;
     display: inline-block;
-    font-size: 34px;
+    font-size: 44px;
     line-height: 40px;
     font-weight: 900;
     text-transform: uppercase;
     vertical-align: middle;
+    font-family: $franklin_gothic;
 }
 
 .enroll_box .edge_top {
@@ -125,12 +126,18 @@ span.title {
     h2 {
     	color: $dark_gray;
     	font-weight: $heavy;
-        font-size: 17px !important;
+        font-family: $franklin_gothic;
+    }
+}
+
+.enroll_content .form-group {
+    p {
+        font-family: $franklin_gothic;
+        margin-bottom: 0;
     }
 }
 
 .programs_btn {
-    font-size: 12px;
     text-decoration: underline !Important;
 }
 
@@ -140,9 +147,17 @@ span.title {
     border-radius: 0.25rem;
     color: $white;
     font-weight: $bold;
+    font-family: $franklin_gothic;
 }
 
 .joe_btn:hover,.joe_btn:focus,
 .joe_btn:active {
     color: $white;
+}
+
+.form-control {
+    -webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    -moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    box-shadow: inset 2px 2px 2px 0px #dddddd;
+    border: 1px solid #aaa;
 }

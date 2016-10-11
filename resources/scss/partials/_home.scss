@@ -6,11 +6,13 @@
     border-top: 5px solid $primary;
     padding: 25px 15px 15px 15px;
     margin-bottom: 30px;
+    min-height: 320px;
+    background-image: url('../resources/images/pattern.png') !important;
 
-    h2 {
+    h2:first-child {
     	color: $dark_gray;
     	margin-bottom: 20px;
-    	font-size: 20px;
+    	text-transform: uppercase;
 
     	span {
     		font-size: 40px;
@@ -19,9 +21,15 @@
     	}
     }
 
+    .transform {
+    	text-transform: none !important;
+    }
+
     .second {
     	color: $white;
-	    padding: 20px;
+	    padding: 10px;
+	    display: inline-block;
+	    margin-bottom: 20px;
 	    
 	    h2 {
 	    	color: $white !important;
@@ -32,17 +40,20 @@
 		padding: 10px;
 		display: inline-block;
 		text-transform: uppercase;
+		color: $dark_gray;
 	}
 
 	a {
+		font-family: $delicious_heavy;
 	    background: $secondary;
 	    color: $dark_gray;
 	    border-radius: 0.25em;
 	    padding: 5px 10px;
-	    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
-		   -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
-				box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
 	}
+}
+
+.no_pattern {
+	background-image: none !important;
 }
 
 .gray {
@@ -59,6 +70,7 @@
 	}
 
 	a {
+		font-family: $delicious_heavy;
 		position: absolute;
 	    bottom: 40px;
 	    right: 15px;
@@ -80,7 +92,7 @@
     		max-width: 150px;
 	    }
 
-	    h2 {
+	    h1 {
 	    	position: absolute;
 		    top: 50%;
 		    left: 35%;
@@ -116,6 +128,7 @@
 			background: $secondary;
 		    display: inline-block;
 		    padding: 10px 20px;
+		    font-family: $franklin_gothic !important;
 
 		}
 
@@ -130,8 +143,10 @@
 				width: 200px;
 
 				p {
+					margin-bottom: 0;
 					color: $secondary;
 					font-weight: $bold;
+					font-family: $franklin_gothic !important;
 				}
 
 				.border {
@@ -183,13 +198,13 @@
     		height: 170px;
 
 			p {
+				
 				position: absolute;
 			    top: 0;
 			    width: 200px;
 			    padding: 10px;
 			    color: $white !important;
-			    font-size: 12px;
-			    font-weight: 400 !important;
+			    font-size: 13px;
 			}
 
 			figcaption {
@@ -208,6 +223,11 @@
 				
 				img {
 					height: 150px;
+				}
+
+				p {
+					font-size: 14px;
+					font-family: $print_bold !important; 
 				}
 			}
 		}
@@ -277,10 +297,23 @@
 	text-align: center;
 	position: relative;
 
-	.rocket {
-	    position: absolute;
-	    right: 300px;
-	    width: 100px;
+	.learn_joe_content {
+		position: relative;
+
+		.rocket {
+			position: absolute;
+			right: 0;
+		}
+	}
+
+	h1 {
+		color: $white;
+		font-family: $franklin_gothic !important;
+		text-transform: none;
+	}
+
+	h2 {
+		color: $dark_gray;
 	}
 
 	ul {
@@ -290,7 +323,6 @@
 
     	li {
     		display: inline-block;
-    		margin-bottom: 30px;
     		width: 140px;
 
     		img {
@@ -301,7 +333,8 @@
     			margin-top: 10px;
 			    color: $primary;
 			    font-weight: 900;
-			    font-size: 14px;
+		        font-size: 18px;
+				font-family: "gothic";
     		}
     	}
 	}

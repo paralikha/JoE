@@ -1,4 +1,23 @@
-$font-family: 'Open Sans', sans-serif;
+ @font-face {
+	font-family: "delicious";
+	src: url('../resources/fonts/delicious/delicious-heavy.woff') format('woff');
+}
+@font-face {
+    font-family: "print";
+    src: url('../resources/fonts/print/PrintBold-webfont.eot');
+    src: url('../resources/fonts/print/PrintBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../resources/fonts/print/PrintBold-webfont.woff') format('woff'),
+         url('../resources/fonts/print/PrintBold-webfont.ttf') format('truetype'),
+         url('../resources/fonts/print/PrintBold-webfont.svg#print_boldregular') format('svg');
+}
+@font-face {
+	font-family: "gothic";
+	src: url('../resources/fonts/franklin/franklin_demi_cond.ttf') format('truetype'),
+}
+
+$delicious_heavy: "delicious", Arial, Helvetica, sans-serif;
+$print_bold: "print", Arial, Helvetica, sans-serif;
+$franklin_gothic: "gothic", Arial, Helvetica, sans-serif;
 
 // color
 $primary: #6e266f;
@@ -7,10 +26,10 @@ $dark_gray: #373636;
 $white: #ffffff;
 
 // headings
-$h1: 39px;
+$h1: 40px;
 $h2: 25px;
 $h3: 10px;
-$paragraph: 16px;
+$paragraph: 20px;
 
 // font_weight
 $light: 200;
@@ -18,3 +37,4 @@ $semi_light: 300;
 $semibold: 500;
 $bold: 700;
 $heavy: 900;
+

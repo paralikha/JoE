@@ -15,7 +15,6 @@ section#about_us {
     background: #fff;
     width: 100%;
     position: relative;
-    border-radius: 10px;
     -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
 	   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
 			box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
@@ -31,6 +30,7 @@ section#about_us {
 		}
 
 	    .tab-content h2 {
+	    	font-family: $franklin_gothic;
 	    	color: $primary;
 	    	text-transform: uppercase;
 	    	margin-bottom: 10px;
@@ -165,6 +165,9 @@ section#about_us {
     margin-top: 20px;
 }
 
+.margin30 {
+	margin-top: 30px;
+}
 
 .margin40 {
     margin-top: 40px;

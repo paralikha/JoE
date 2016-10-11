@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "delicious";
+  src: url("../resources/fonts/delicious/delicious-heavy.woff") format("woff"); }
+@font-face {
+  font-family: "print";
+  src: url("../resources/fonts/print/PrintBold-webfont.eot");
+  src: url("../resources/fonts/print/PrintBold-webfont.eot?#iefix") format("embedded-opentype"), url("../resources/fonts/print/PrintBold-webfont.woff") format("woff"), url("../resources/fonts/print/PrintBold-webfont.ttf") format("truetype"), url("../resources/fonts/print/PrintBold-webfont.svg#print_boldregular") format("svg"); }
+@font-face {
+  font-family: "gothic";
+  src: url("../resources/fonts/franklin/franklin_demi_cond.ttf") format("truetype"); }
 /*!
  * Bootstrap v4.0.0-alpha.3 (http://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors
@@ -4813,7 +4823,7 @@ input[type="email"]:-ms-input-placeholder {
 
 body, html {
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "print", Arial, Helvetica, sans-serif;
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
   -o-transition: all .2s linear;
@@ -4821,10 +4831,10 @@ body, html {
   transition: all .2s linear; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "print", Arial, Helvetica, sans-serif;
   background: #ffffff;
   height: 100%;
-  color: 16px;
+  color: 20px;
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
   -o-transition: all .2s linear;
@@ -4832,10 +4842,10 @@ body {
   transition: all .2s linear; }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "delicious", Arial, Helvetica, sans-serif;
   font-weight: 900;
   color: #373636;
-  font-size: 39px;
+  font-size: 40px;
   text-transform: uppercase;
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
@@ -4843,7 +4853,7 @@ h1 {
   transition: all .2s linear; }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "delicious", Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: #ffffff;
   font-size: 25px;
@@ -4853,9 +4863,9 @@ h2 {
   transition: all .2s linear; }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "print", Arial, Helvetica, sans-serif;
   color: #373636;
-  font-size: 16px;
+  font-size: 20px;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
@@ -4937,6 +4947,7 @@ p {
     width: 150px; }
   #nav_header ul li a {
     color: #373636;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700; }
   #nav_header ul li a:hover {
@@ -4972,13 +4983,13 @@ p {
       text-transform: lowercase; }
     #menu1 li.width280 .nav-link p {
       font-weight: 300;
-      font-size: 14px; }
+      font-size: 17px; }
   #menu1 li {
     margin-right: 1rem; }
     #menu1 li img {
       margin-bottom: 10px; }
     #menu1 li p {
-      font-size: 14px; }
+      font-size: 17px; }
   #menu1 .nav-menu-links ul {
     list-style: none;
     padding: 0; }
@@ -5019,32 +5030,40 @@ p {
 .hero_box {
   border-top: 5px solid #6e266f;
   padding: 25px 15px 15px 15px;
-  margin-bottom: 30px; }
-  .hero_box h2 {
+  margin-bottom: 30px;
+  min-height: 320px;
+  background-image: url("../resources/images/pattern.png") !important; }
+  .hero_box h2:first-child {
     color: #373636;
     margin-bottom: 20px;
-    font-size: 20px; }
-    .hero_box h2 span {
+    text-transform: uppercase; }
+    .hero_box h2:first-child span {
       font-size: 40px;
       text-transform: uppercase;
       color: #6e266f; }
+  .hero_box .transform {
+    text-transform: none !important; }
   .hero_box .second {
     color: #ffffff;
-    padding: 20px; }
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 20px; }
     .hero_box .second h2 {
       color: #ffffff !important; }
   .hero_box .third {
     padding: 10px;
     display: inline-block;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #373636; }
   .hero_box a {
+    font-family: "delicious", Arial, Helvetica, sans-serif;
     background: #fdbe3c;
     color: #373636;
     border-radius: 0.25em;
-    padding: 5px 10px;
-    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35); }
+    padding: 5px 10px; }
+
+.no_pattern {
+  background-image: none !important; }
 
 .gray {
   background: #f2f2f2; }
@@ -5055,6 +5074,7 @@ p {
 .hero_bottom img {
   width: 100%; }
 .hero_bottom a {
+  font-family: "delicious", Arial, Helvetica, sans-serif;
   position: absolute;
   bottom: 40px;
   right: 15px;
@@ -5071,7 +5091,7 @@ p {
   .hero_bottom .hero_text img {
     float: right;
     max-width: 150px; }
-  .hero_bottom .hero_text h2 {
+  .hero_bottom .hero_text h1 {
     position: absolute;
     top: 50%;
     left: 35%;
@@ -5095,7 +5115,8 @@ p {
     #phases .phases_content h2 {
       background: #fdbe3c;
       display: inline-block;
-      padding: 10px 20px; }
+      padding: 10px 20px;
+      font-family: "gothic", Arial, Helvetica, sans-serif !important; }
     #phases .phases_content ul {
       margin-top: 40px;
       text-align: center;
@@ -5105,8 +5126,10 @@ p {
         display: inline-block;
         width: 200px; }
         #phases .phases_content ul li p {
+          margin-bottom: 0;
           color: #fdbe3c;
-          font-weight: 700; }
+          font-weight: 700;
+          font-family: "gothic", Arial, Helvetica, sans-serif !important; }
         #phases .phases_content ul li .border {
           position: relative;
           width: 150px;
@@ -5146,8 +5169,7 @@ p {
         width: 200px;
         padding: 10px;
         color: #ffffff !important;
-        font-size: 12px;
-        font-weight: 400 !important; }
+        font-size: 13px; }
       #phases .phases_content figure figcaption .caption {
         padding: 10px;
         background: rgba(110, 38, 111, 0.42);
@@ -5160,6 +5182,9 @@ p {
         font-size: 14px; }
       #phases .phases_content figure figcaption img {
         height: 150px; }
+      #phases .phases_content figure figcaption p {
+        font-size: 14px;
+        font-family: "print", Arial, Helvetica, sans-serif !important; }
     #phases .phases_content figure:before {
       content: '';
       position: absolute;
@@ -5206,17 +5231,23 @@ p {
 #learn_joe {
   text-align: center;
   position: relative; }
-  #learn_joe .rocket {
-    position: absolute;
-    right: 300px;
-    width: 100px; }
+  #learn_joe .learn_joe_content {
+    position: relative; }
+    #learn_joe .learn_joe_content .rocket {
+      position: absolute;
+      right: 0; }
+  #learn_joe h1 {
+    color: #ffffff;
+    font-family: "gothic", Arial, Helvetica, sans-serif !important;
+    text-transform: none; }
+  #learn_joe h2 {
+    color: #373636; }
   #learn_joe ul {
     list-style: none;
     padding: 0;
     margin-top: 40px; }
     #learn_joe ul li {
       display: inline-block;
-      margin-bottom: 30px;
       width: 140px; }
       #learn_joe ul li img {
         width: 60px; }
@@ -5224,7 +5255,8 @@ p {
         margin-top: 10px;
         color: #6e266f;
         font-weight: 900;
-        font-size: 14px; }
+        font-size: 18px;
+        font-family: "gothic"; }
 
 section#about_us {
   background: url(../resources/images/rocket_1.png) no-repeat center center fixed;
@@ -5240,7 +5272,6 @@ section#about_us {
   background: #fff;
   width: 100%;
   position: relative;
-  border-radius: 10px;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35); }
@@ -5250,6 +5281,7 @@ section#about_us {
     .about_box .about_tab .ceo_img {
       max-width: 250px; }
     .about_box .about_tab .tab-content h2 {
+      font-family: "gothic", Arial, Helvetica, sans-serif;
       color: #6e266f;
       text-transform: uppercase;
       margin-bottom: 10px;
@@ -5349,6 +5381,9 @@ section#about_us {
 .margin20 {
   margin-top: 20px; }
 
+.margin30 {
+  margin-top: 30px; }
+
 .margin40 {
   margin-top: 40px; }
 
@@ -5357,7 +5392,8 @@ section#about_us {
 
 .j_program a {
   color: #373636;
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: "gothic", Arial, Helvetica, sans-serif; }
 
 .j_program a:hover {
   color: #ffffff; }
@@ -5447,6 +5483,9 @@ section#about_us {
     .about_box .nav-tabs {
       text-align: center; }
 
+  #learn_joe ul li {
+    margin-bottom: 30px; }
+
   .joe_action_link a,
   .joe_action_link
   .joe_action_link .title {
@@ -5463,9 +5502,12 @@ section#about_us {
     display: none; }
 
   #learn_joe li {
-    margin-right: 0 !important; } }
+    margin-right: 0 !important; }
+
+  #learn_joe .rocket {
+    display: none; } }
 @media only screen and (min-width: 1020px) {
-  .popopo {
+  #nav_collapse {
     display: none; } }
 @media only screen and (max-width: 1019px) {
   .width1200 {
@@ -5560,11 +5602,12 @@ section#enroll {
 span.title {
   color: #ffffff;
   display: inline-block;
-  font-size: 34px;
+  font-size: 44px;
   line-height: 40px;
   font-weight: 900;
   text-transform: uppercase;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-family: "gothic", Arial, Helvetica, sans-serif; }
 
 .enroll_box .edge_top {
   background: #fdbe3c;
@@ -5577,10 +5620,13 @@ span.title {
   .enroll_box .edge_top h2 {
     color: #373636;
     font-weight: 900;
-    font-size: 17px !important; }
+    font-family: "gothic", Arial, Helvetica, sans-serif; }
+
+.enroll_content .form-group p {
+  font-family: "gothic", Arial, Helvetica, sans-serif;
+  margin-bottom: 0; }
 
 .programs_btn {
-  font-size: 12px;
   text-decoration: underline !Important; }
 
 .joe_btn {
@@ -5588,11 +5634,18 @@ span.title {
   padding: 5px 10px;
   border-radius: 0.25rem;
   color: #ffffff;
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: "gothic", Arial, Helvetica, sans-serif; }
 
 .joe_btn:hover, .joe_btn:focus,
 .joe_btn:active {
   color: #ffffff; }
+
+.form-control {
+  -webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+  -moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+  box-shadow: inset 2px 2px 2px 0px #dddddd;
+  border: 1px solid #aaa; }
 
 footer {
   background: #6e266f; }
@@ -5604,7 +5657,7 @@ footer {
     margin-bottom: 0; }
   footer p {
     color: #ffffff;
-    font-size: 12px; }
+    font-size: 16px; }
   footer ul {
     list-style: none;
     padding: 0; }
@@ -5612,7 +5665,7 @@ footer {
     line-height: 18px; }
   footer ul li a {
     color: #ffffff;
-    font-size: 12px; }
+    font-size: 16px; }
   footer a:hover {
     color: #fdbe3c; }
   footer .footer_input a {

@@ -49,7 +49,7 @@ input[type="email"]:-ms-input-placeholder {
 
 body, html {
 	height: 100%;
-	font-family: $font-family;
+	font-family: $print_bold;
 	-webkit-transition: all .2s linear;
 	   -moz-transition: all .2s linear;
 	     -o-transition: all .2s linear;
@@ -58,7 +58,7 @@ body, html {
 }
 
 body {
-	font-family: $font-family;
+	font-family: $print_bold;
 	background: $white;
 	height: 100%;
 	color: $paragraph;
@@ -70,7 +70,7 @@ body {
 }
 
 h1 {
-	font-family: $font-family;
+	font-family: $delicious_heavy;
 	font-weight: $heavy;
 	color: $dark_gray;
 	font-size: $h1;
@@ -82,7 +82,7 @@ h1 {
 }
 
 h2 {
-	font-family: $font-family;
+	font-family: $delicious_heavy;
 	font-weight: $bold;
 	color: $white;
 	font-size: $h2;
@@ -93,7 +93,7 @@ h2 {
 }
 
 p {
-	font-family: $font-family;
+	font-family: $print_bold;
 	color: $dark_gray;
 	font-size: $paragraph;
 	-webkit-transition: 0.4s;
