@@ -186,3 +186,10 @@ p {
 	background: $secondary !important;
 	opacity: 0.5 !important;
 }
+
+#about_us .rocket_bg {
+	position: fixed;
+    width: 700px;
+    top: 70px;
+    z-index: 0;
+}

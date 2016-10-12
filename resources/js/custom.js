@@ -17,11 +17,11 @@ $(document).ready(function() {
     });
 });
 
-//  Dropdown
+// Dropdown
 $('ul.nav li.dropdown').hover(function() {
     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-    }, function() {
-        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+}, function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 
 // nicescroll
@@ -31,3 +31,15 @@ $(document).ready(
         $("html").niceScroll();
     }
 );
+
+// animated slide
+
+$(document).ready(function() {
+    var owl = $("#animated_slide");
+    owl.owlCarousel({
+        // navigation : true,
+        singleItem : true,
+        transitionStyle : "fade",
+        autoPlay: 3000,
+    });
+});

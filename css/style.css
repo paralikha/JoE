@@ -7126,6 +7126,12 @@ p {
   background: #fdbe3c !important;
   opacity: 0.5 !important; }
 
+#about_us .rocket_bg {
+  position: fixed;
+  width: 700px;
+  top: 70px;
+  z-index: 0; }
+
 #nav_header {
   border-top: 8px solid #6e266f; }
   #nav_header .width1200 {
@@ -7203,7 +7209,7 @@ p {
 #menu2 {
   border-radius: 0 !important;
   left: -80px;
-  width: 600px;
+  width: 520px;
   padding: 10px; }
   #menu2 .nav-item {
     margin-right: 10px; }
@@ -7211,8 +7217,7 @@ p {
       display: block; }
       #menu2 .nav-item a img {
         margin-bottom: 20px;
-        width: 100%;
-        min-width: 100px !important; }
+        width: 90px !important; }
     #menu2 .nav-item p {
       font-weight: 300;
       margin-bottom: 0;
@@ -7475,6 +7480,11 @@ p {
         font-weight: 900;
         font-size: 18px;
         font-family: "gothic"; }
+
+#animated_slide .item img {
+  display: block;
+  width: 100%;
+  height: auto; }
 
 section#about_us {
   background: url(../resources/images/rocket_1.png) no-repeat center center fixed;
@@ -7762,7 +7772,8 @@ section#enroll {
 .divider_bg {
   background: #373636;
   height: 20px;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .joe_action_link {
   position: relative; }
