@@ -340,6 +340,19 @@
 	}
 }
 
+.intro_slider img {
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -90px;
+}
+
+.intro_slider {
+    position: relative;
+    height: 300px;
+}
+
 #animated_slide .item img{
     display: block;
     width: 100%;

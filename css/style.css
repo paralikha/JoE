@@ -7130,7 +7130,19 @@ p {
   position: fixed;
   width: 700px;
   top: 70px;
+  left: 0;
   z-index: 0; }
+
+#about_us,
+#phases,
+#featured_img,
+#learn_joe,
+#enroll,
+.divider_bg,
+footer,
+section {
+  position: relative;
+  z-index: 2; }
 
 #nav_header {
   border-top: 8px solid #6e266f; }
@@ -7480,6 +7492,17 @@ p {
         font-weight: 900;
         font-size: 18px;
         font-family: "gothic"; }
+
+.intro_slider img {
+  width: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: -90px; }
+
+.intro_slider {
+  position: relative;
+  height: 300px; }
 
 #animated_slide .item img {
   display: block;

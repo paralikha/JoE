@@ -1,6 +1,5 @@
 $(document).ready(function() {
- 
-  //Sort random function
+//Sort random function
   function random(owlSelector){
     owlSelector.children().sort(function(){
         return Math.round(Math.random()) - 0.5;
@@ -25,7 +24,6 @@ $('ul.nav li.dropdown').hover(function() {
 });
 
 // nicescroll
-
 $(document).ready(
     function() { 
         $("html").niceScroll();
@@ -33,13 +31,12 @@ $(document).ready(
 );
 
 // animated slide
-
-$(document).ready(function() {
-    var owl = $("#animated_slide");
-    owl.owlCarousel({
-        // navigation : true,
-        singleItem : true,
-        transitionStyle : "fade",
+$(document).ready(function() {  
+    $("#animated_slide").owlCarousel({
+        navigation : false,
+        // slideSpeed : 300,
+        // paginationSpeed : 400,
+        singleItem:true,
         autoPlay: 3000,
     });
 });
