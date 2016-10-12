@@ -7144,6 +7144,12 @@ section {
   position: relative;
   z-index: 2; }
 
+#animated_slide p {
+  color: #ffffff;
+  font-size: 25px; }
+  #animated_slide p i {
+    font-size: 30px; }
+
 #nav_header {
   border-top: 8px solid #6e266f; }
   #nav_header .width1200 {
@@ -7641,6 +7647,9 @@ section#about_us {
 .j_program h2 {
   margin-bottom: 30px !important; }
 
+.j_program img {
+  text-align: center; }
+
 .j_program a {
   color: #373636;
   font-weight: 700;
@@ -7714,25 +7723,35 @@ section#about_us {
   width: 100%; }
 .j_registration a {
   color: #373636;
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: "gothic", Arial, Helvetica, sans-serif; }
 .j_registration a:hover {
   color: #ffffff;
   transition: all .2s linear; }
 
 @media only screen and (max-width: 768px) {
+  .intro_slider img {
+    display: none; }
+
+  img {
+    max-width: 300px; }
+
   .wrapper {
     padding: 40px 5px; }
+
+  .rocket_bg {
+    display: none; }
 
   .about_box {
     padding: 70px 20px;
     padding-bottom: 20px; }
     .about_box .about_tab {
-      min-height: 0;
-      margin-bottom: 40px; }
+      min-height: 0; }
     .about_box .j_1_img {
       display: none; }
     .about_box .nav-tabs {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 40px; }
 
   #learn_joe ul li {
     margin-bottom: 30px; }
@@ -7756,7 +7775,10 @@ section#about_us {
     margin-right: 0 !important; }
 
   #learn_joe .rocket {
-    display: none; } }
+    display: none; }
+
+  .j_program h2 {
+    text-align: center !important; } }
 @media only screen and (min-width: 1020px) {
   #nav_collapse {
     display: none; } }

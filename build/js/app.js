@@ -44,7 +44,7 @@ $(document).ready(function() {
         // slideSpeed : 300,
         // paginationSpeed : 400,
         singleItem:true,
-        autoPlay: 3000,
+        autoPlay: 5000,
     });
 });
 /*! jQuery v3.0.0 | (c) jQuery Foundation | jquery.org/license */

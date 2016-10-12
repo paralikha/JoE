@@ -206,3 +206,12 @@ section {
 	position: relative;
 	z-index: 2;
 }
+
+#animated_slide p {
+	color: $white;
+	font-size: 25px;
+
+	i {
+		font-size: 30px;
+	}
+}
