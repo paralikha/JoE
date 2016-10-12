@@ -9093,13 +9093,6 @@ input[type="email"]:-ms-input-placeholder {
   color: #373636;
 }
 
-body, html {
-  height: 100%;
-  font-family: "print", Arial, Helvetica, sans-serif;
-  transition: all .2s linear;
-  transition: all .2s linear;
-}
-
 body {
   font-family: "print", Arial, Helvetica, sans-serif;
   background: #ffffff;
@@ -9218,18 +9211,6 @@ p {
   z-index: 0;
 }
 
-#about_us,
-#phases,
-#featured_img,
-#learn_joe,
-#enroll,
-.divider_bg,
-footer,
-section {
-  position: relative;
-  z-index: 2;
-}
-
 #animated_slide p {
   color: #ffffff;
   font-size: 25px;
@@ -9321,6 +9302,7 @@ section {
 #menu1 .nav-menu-links ul li {
   padding: 10px 0;
   border-bottom: 1px solid #fdbe3c;
+  margin-left: 0 !important;
 }
 #menu1 .nav-menu-links ul li h2 {
   color: #373636 !important;
@@ -9944,10 +9926,6 @@ section#about_us {
 @media only screen and (max-width: 768px) {
   .intro_slider img {
     display: none;
-  }
-
-  img {
-    max-width: 300px;
   }
 
   .wrapper {
