@@ -8,20 +8,12 @@
 		display: none;
 	}
 	
-	// img {
-	// 	max-width: 300px;
-	// }
+	img {
+		max-width: 300px;
+	}
 
 	.wrapper {
 		padding: 40px 5px;
-	}
-
-	.navbar_links {
-		// display: none;
-	}
-
-	.rocket_bg {
-		display: none;
 	}
 
 	.about_box {
@@ -30,7 +22,6 @@
 
 		.about_tab {
 			min-height: 0;
-			// margin-bottom: 40px;
 		}
 
 		.j_1_img {
@@ -81,6 +72,15 @@
 	.j_program h2 {
 		text-align: center !important;
 	}
+
+	#animated_slide p {
+	    color: $white;
+	    font-size: 18px;
+
+	    i {
+	    	font-size: 22px;
+	    }
+	}
 }
 
 @media only screen and (min-width: 1020px) {
@@ -91,6 +91,10 @@
 
 @media only screen and (max-width: 1019px) {
 	.width1200 {
+		display: none;
+	}
+
+	.rocket_bg {
 		display: none;
 	}
 }

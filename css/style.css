@@ -7809,11 +7809,11 @@ section#about_us {
   .intro_slider img {
     display: none; }
 
+  img {
+    max-width: 300px; }
+
   .wrapper {
     padding: 40px 5px; }
-
-  .rocket_bg {
-    display: none; }
 
   .about_box {
     padding: 70px 20px;
@@ -7851,12 +7851,21 @@ section#about_us {
     display: none; }
 
   .j_program h2 {
-    text-align: center !important; } }
+    text-align: center !important; }
+
+  #animated_slide p {
+    color: #ffffff;
+    font-size: 18px; }
+    #animated_slide p i {
+      font-size: 22px; } }
 @media only screen and (min-width: 1020px) {
   #nav_collapse {
     display: none; } }
 @media only screen and (max-width: 1019px) {
   .width1200 {
+    display: none; }
+
+  .rocket_bg {
     display: none; } }
 section#enroll {
   background-image: url(../resources/images/prog_bg.jpg);
