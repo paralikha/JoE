@@ -38,7 +38,23 @@
     top: 55px;
 }
 
-.ne h3 {
-    font-family: $franklin_gothic;
-    font-size: 25px;
+.ne {
+    h3 {
+        font-family: $franklin_gothic;
+        font-size: 25px;
+    }
+}
+
+#imageGallery {
+    
+    li {
+        padding-right: 10px;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.lSSlideOuter .lSPager.lSGallery img {
+    display: none !important;
 }

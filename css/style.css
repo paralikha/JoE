@@ -7587,6 +7587,19 @@ p {
   width: 100%;
   height: auto; }
 
+.carousel_animate .carousel-indicators {
+  display: none; }
+
+.carousel_animate .carousel_animate .carousel-indicators {
+  display: none; }
+.carousel_animate .carousel-control.right,
+.carousel_animate .carousel-control.left {
+  background-image: none; }
+.carousel_animate .carousel-control {
+  display: none; }
+.carousel_animate p {
+  color: #ffffff; }
+
 section#about_us {
   background: url(../resources/images/rocket_1.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -7786,6 +7799,14 @@ section#about_us {
 .ne h3 {
   font-family: "gothic", Arial, Helvetica, sans-serif;
   font-size: 25px; }
+
+#imageGallery li {
+  padding-right: 10px; }
+#imageGallery img {
+  width: 100%; }
+
+.lSSlideOuter .lSPager.lSGallery img {
+  display: none !important; }
 
 .j_contact img {
   width: 100%; }

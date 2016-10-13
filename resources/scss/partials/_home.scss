@@ -352,3 +352,26 @@
     width: 100%;
     height: auto;
 }
+
+.carousel_animate .carousel-indicators {
+    display: none;
+}
+
+.carousel_animate{
+	.carousel_animate .carousel-indicators {
+	    display: none;
+	}
+
+	.carousel-control.right,
+	.carousel-control.left {
+		background-image: none;
+	}
+
+	.carousel-control {
+		display: none;
+	}
+
+	p {
+		color: $white;
+	}
+}
