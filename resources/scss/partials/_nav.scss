@@ -1,5 +1,7 @@
 #nav_header {
 	border-top: 8px solid $primary;
+	position: relative;
+	z-index: 2;
 
 	.width1200 {
 	    max-width: 1200px;

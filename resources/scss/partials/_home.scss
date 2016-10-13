@@ -84,21 +84,15 @@
 
 	.hero_text {
 	    padding: 10px;
-   		height: 241px;
    		position: relative;
 
 	    img {
-	    	float: right;
     		max-width: 150px;
 	    }
 
 	    h1 {
-	    	position: absolute;
-		    top: 50%;
-		    left: 35%;
-		    text-transform: none;
-		    -webkit-transform: translate(-50%, -50%);
-		    		transform: translate(-50%, -50%);
+	    	width: 70%;
+    		float: left;
 	    }
 	}
 }

@@ -9221,6 +9221,8 @@ p {
 
 #nav_header {
   border-top: 8px solid #6e266f;
+  position: relative;
+  z-index: 2;
 }
 #nav_header .width1200 {
   max-width: 1200px;
@@ -9446,19 +9448,14 @@ p {
 }
 .hero_bottom .hero_text {
   padding: 10px;
-  height: 241px;
   position: relative;
 }
 .hero_bottom .hero_text img {
-  float: right;
   max-width: 150px;
 }
 .hero_bottom .hero_text h1 {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  text-transform: none;
-  transform: translate(-50%, -50%);
+  width: 70%;
+  float: left;
 }
 
 #phases {
@@ -9817,6 +9814,10 @@ section#about_us {
   margin-top: 40px;
 }
 
+.s-title p {
+  font-family: "gothic", Arial, Helvetica, sans-serif;
+}
+
 .j_program h2 {
   margin-bottom: 30px !important;
 }
@@ -9895,6 +9896,11 @@ section#about_us {
   top: 55px;
 }
 
+.ne h3 {
+  font-family: "gothic", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
 .j_contact img {
   width: 100%;
 }
@@ -9928,8 +9934,11 @@ section#about_us {
     display: none;
   }
 
-  img {
-    max-width: 300px;
+  .hero_text h2 {
+    font-size: 20px !important;
+  }
+  .hero_text img {
+    display: none;
   }
 
   .wrapper {
