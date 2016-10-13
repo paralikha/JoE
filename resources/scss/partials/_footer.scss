@@ -1,5 +1,7 @@
 footer {
 	background: $primary;
+	position: relative;
+	z-index: 1;
 
 	h2 {
 		text-transform: uppercase;
@@ -43,6 +45,7 @@ footer {
 		    float: right;
 		    margin-top: 10px;
 		    color: $white;
+		    font-family: $franklin_gothic;
 		}
 
 		p {

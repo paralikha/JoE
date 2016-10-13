@@ -6,7 +6,7 @@
     border-top: 5px solid $primary;
     padding: 25px 15px 15px 15px;
     margin-bottom: 30px;
-    min-height: 320px;
+    min-height: 370px;
     background-image: url('../resources/images/pattern.png') !important;
 
     h2:first-child {
@@ -222,6 +222,7 @@
 				p {
 					font-size: 14px;
 					font-family: $print_bold !important; 
+					line-height: 19px;
 				}
 			}
 		}
@@ -373,5 +374,6 @@
 
 	p {
 		color: $white;
+		font-size: 25px;
 	}
 }

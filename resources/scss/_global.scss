@@ -47,7 +47,7 @@ input[type="email"]:-ms-input-placeholder {
     color: $dark_gray;  
 }
 
-// html {
+// body, html {
 // 	height: 100%;
 // 	font-family: $print_bold;
 // 	-webkit-transition: all .2s linear;
@@ -202,4 +202,8 @@ p {
 	i {
 		font-size: 30px;
 	}
+}
+
+#ascrail2000 {
+	z-index: 2 !important;
 }

@@ -12,122 +12,6 @@
   font-family: "gothic";
   src: url("../resources/fonts/franklin/franklin_demi_cond.ttf") format("truetype");
 }
-html, body {
-  overflow-x: hidden;
-}
-
-html {
-  font-size: 1rem;
-}
-
-body {
-  font-size: 100%;
-  color: #888888;
-}
-
-nav ul {
-  padding-left: 0;
-  list-style: none;
-}
-nav li.active a, nav li.current-menu-item a, nav li.current_page_item a {
-  color: #f07b47;
-}
-nav a {
-  color: #147ec7;
-}
-nav a:hover, nav a:focus, nav a:active {
-  color: #f07b47;
-}
-
-textarea {
-  max-width: 100%;
-  resize: vertical;
-  min-height: 250px;
-}
-
-iframe {
-  overflow: hidden !important;
-  border: none;
-  background-color: transparent;
-  max-width: 100%;
-}
-
-article a,
-section a {
-  color: #f07b47;
-}
-article a:hover, article a:focus, article a:active,
-section a:hover,
-section a:focus,
-section a:active {
-  color: #ec5918;
-}
-article a[target="_blank"]:after,
-section a[target="_blank"]:after {
-  content: "\f14c";
-  display: inline-block;
-  vertical-align: top;
-  width: 10px;
-  height: 10px;
-  font-family: "FontAwesome", sans-serif;
-  font-size: 0.6rem;
-  margin-top: -10px;
-}
-
-blockquote {
-  clear: both;
-  color: #5c5858;
-  display: block;
-  padding-left: 1.66667rem;
-}
-blockquote cite {
-  display: block;
-  text-align: right;
-  font-size: 0.9rem;
-}
-
-noscript {
-  background-color: rgba(237, 89, 89, 0.5);
-  display: block;
-  padding: 0.83333rem;
-  color: #ffffff;
-}
-
-.error {
-  font-style: italic;
-  color: #f0ad4e;
-}
-
-::-webkit-scrollbar {
-  width: 12px;
-  height: 18px;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  background: #fefefe;
-}
-
-::-webkit-scrollbar-thumb {
-  height: 6px;
-  border: 4px solid transparent;
-  border-right: 2px solid transparent;
-  background-clip: padding-box;
-  -webkit-border-radius: 12px;
-  background-color: rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
-}
-
-@font-face {
-  font-family: "delicious";
-  src: url("../resources/fonts/delicious/delicious-heavy.woff") format("woff");
-}
-@font-face {
-  font-family: "print";
-  src: url("../resources/fonts/print/PrintBold-webfont.eot");
-  src: url("../resources/fonts/print/PrintBold-webfont.eot?#iefix") format("embedded-opentype"), url("../resources/fonts/print/PrintBold-webfont.woff") format("woff"), url("../resources/fonts/print/PrintBold-webfont.ttf") format("truetype"), url("../resources/fonts/print/PrintBold-webfont.svg#print_boldregular") format("svg");
-}
-@font-face {
-  font-family: "gothic";
-  src: url("../resources/fonts/franklin/franklin_demi_cond.ttf") format("truetype");
-}
 /*!
  * Bootstrap v4.0.0-alpha.3 (http://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors
@@ -9219,6 +9103,10 @@ p {
   font-size: 30px;
 }
 
+#ascrail2000 {
+  z-index: 2 !important;
+}
+
 #nav_header {
   border-top: 8px solid #6e266f;
   position: relative;
@@ -9382,7 +9270,7 @@ p {
   border-top: 5px solid #6e266f;
   padding: 25px 15px 15px 15px;
   margin-bottom: 30px;
-  min-height: 320px;
+  min-height: 370px;
   background-image: url("../resources/images/pattern.png") !important;
 }
 .hero_box h2:first-child {
@@ -9559,6 +9447,7 @@ p {
 #phases .phases_content figure figcaption p {
   font-size: 14px;
   font-family: "print", Arial, Helvetica, sans-serif !important;
+  line-height: 19px;
 }
 #phases .phases_content figure:before {
   content: '';
@@ -9666,6 +9555,25 @@ p {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.carousel_animate .carousel-indicators {
+  display: none;
+}
+
+.carousel_animate .carousel_animate .carousel-indicators {
+  display: none;
+}
+.carousel_animate .carousel-control.right,
+.carousel_animate .carousel-control.left {
+  background-image: none;
+}
+.carousel_animate .carousel-control {
+  display: none;
+}
+.carousel_animate p {
+  color: #ffffff;
+  font-size: 25px;
 }
 
 section#about_us {
@@ -9901,6 +9809,18 @@ section#about_us {
   font-size: 25px;
 }
 
+#imageGallery li {
+  padding-right: 10px;
+}
+#imageGallery img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.lSSlideOuter .lSPager.lSGallery img {
+  display: none !important;
+}
+
 .j_contact img {
   width: 100%;
 }
@@ -9934,7 +9854,7 @@ section#about_us {
     display: none;
   }
 
-  .hero_text h2 {
+  .hero_text h1 {
     font-size: 20px !important;
   }
   .hero_text img {
@@ -9995,12 +9915,8 @@ section#about_us {
     text-align: center !important;
   }
 
-  #animated_slide p {
-    color: #ffffff;
+  .carousel_animate p {
     font-size: 18px;
-  }
-  #animated_slide p i {
-    font-size: 22px;
   }
 }
 @media only screen and (min-width: 1020px) {
@@ -10123,6 +10039,7 @@ span.title {
   text-transform: uppercase;
   vertical-align: middle;
   font-family: "gothic", Arial, Helvetica, sans-serif;
+  width: 180px;
 }
 
 .enroll_box .edge_top {
@@ -10168,6 +10085,8 @@ span.title {
 
 footer {
   background: #6e266f;
+  position: relative;
+  z-index: 1;
 }
 footer h2 {
   text-transform: uppercase;
@@ -10203,6 +10122,7 @@ footer .footer_input a {
   float: right;
   margin-top: 10px;
   color: #ffffff;
+  font-family: "gothic", Arial, Helvetica, sans-serif;
 }
 footer .footer_input p {
   margin-bottom: 8px;

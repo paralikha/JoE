@@ -13,7 +13,7 @@
 	}
 
 	.hero_text {
-		h2 {
+		h1 {
 			font-size: 20px !important;
 		}
 
@@ -83,13 +83,10 @@
 		text-align: center !important;
 	}
 
-	#animated_slide p {
-	    color: $white;
-	    font-size: 18px;
-
-	    i {
-	    	font-size: 22px;
-	    }
+	.carousel_animate{
+		p {
+			font-size: 18px;
+		}
 	}
 }
 
