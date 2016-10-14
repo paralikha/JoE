@@ -10134,3 +10134,35 @@ footer input {
   border: none;
   border-radius: 0 !important;
 }
+
+.ripplelink {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  z-index: 0;
+}
+
+.ripplelink:hover {
+  z-index: 1000;
+}
+
+.ink {
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  transform: scale(0);
+}
+
+.animate {
+  animation: ripple 0.65s linear;
+}
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
