@@ -9809,9 +9809,6 @@ section#about_us {
   font-size: 25px;
 }
 
-#imageGallery li {
-  padding-right: 10px;
-}
 #imageGallery img {
   width: 100%;
   cursor: pointer;
@@ -9819,6 +9816,11 @@ section#about_us {
 
 .lSSlideOuter .lSPager.lSGallery img {
   display: none !important;
+}
+
+.about_box .lSAction > a {
+  background-image: url("../resources/images/controls_edit.png") !important;
+  opacity: 1 !important;
 }
 
 .j_contact img {

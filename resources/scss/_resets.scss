@@ -37,14 +37,6 @@ textarea {
 	min-height: 250px;
 }
 
-// textarea {
-// 	max-width: 100%;
-// 	resize: vertical;
-// 	min-height: 250px;
-// 	line-height: 30px;
-// 	margin: 30px auto;
-// }
-
 iframe {
 	overflow: hidden !important;
 	border: none;
@@ -54,20 +46,20 @@ iframe {
 
 article a,
 section a {
-	color: $secondary-color;
+	color: $secodnary-color;
 	&:hover, &:focus, &:active {
 		color: darken($secondary-color, 10%);
 	}
-	&[target="_blank"] {
+	&[target=_"blank"] {
 		&:after {
-			content: "\f14c";
+			content: "f14c";
 			display: inline-block;
 			vertical-align: top;
 			width: 10px;
 			height: 10px;
 			font-family: "FontAwesome", sans-serif;
 			font-size: 0.6rem;
-	margin-top: -10px;
+			margin-top: -10px;
 		}
 	}
 }

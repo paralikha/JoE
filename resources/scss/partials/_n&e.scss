@@ -48,8 +48,9 @@
 #imageGallery {
     
     li {
-        padding-right: 10px;
+        // padding-right: 10px;
     }
+
     img {
         width: 100%;
         cursor: pointer;
@@ -58,4 +59,12 @@
 
 .lSSlideOuter .lSPager.lSGallery img {
     display: none !important;
+}
+
+// slider
+.about_box {
+    .lSAction > a {
+        background-image: url("../resources/images/controls_edit.png") !important;
+        opacity: 1 !important;
+    }
 }
