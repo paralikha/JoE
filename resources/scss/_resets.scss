@@ -37,6 +37,14 @@ textarea {
 	min-height: 250px;
 }
 
+// textarea {
+// 	max-width: 100%;
+// 	resize: vertical;
+// 	min-height: 250px;
+// 	line-height: 30px;
+// 	margin: 30px auto;
+// }
+
 iframe {
 	overflow: hidden !important;
 	border: none;
@@ -59,7 +67,7 @@ section a {
 			height: 10px;
 			font-family: "FontAwesome", sans-serif;
 			font-size: 0.6rem;
-			margin-top: -10px;
+	margin-top: -10px;
 		}
 	}
 }
