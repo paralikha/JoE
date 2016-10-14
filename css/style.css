@@ -7992,7 +7992,10 @@ footer {
   z-index: 0; }
 
 .ripplelink:hover {
-  z-index: 1000; }
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 6px 10px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 6px 10px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 6px 10px 0; }
 
 .ink {
   display: block;
