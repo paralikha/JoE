@@ -7985,17 +7985,17 @@ footer {
   text-decoration: none;
   position: relative;
   overflow: hidden;
+  z-index: 0;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  z-index: 0; }
+  transition: all 0.2s ease; }
 
 .ripplelink:hover {
   z-index: 1000;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 6px 10px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 6px 10px 0;
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 6px 10px 0; }
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 6px 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 6px 10px 0; }
 
 .ink {
   display: block;
