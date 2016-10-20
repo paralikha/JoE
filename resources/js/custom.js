@@ -13,6 +13,12 @@ $(document).ready(
     }
 );
 
+$(document).ready(
+    function() { 
+        $(".o-a").niceScroll();
+    }
+);
+
 // lightSlider
 $(document).ready(function() {
     $('#imageGallery').lightSlider({

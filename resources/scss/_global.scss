@@ -132,6 +132,16 @@ p {
 	color: $primary;
 }
 
+.f-p span {
+	color: $primary;
+	font-family: $delicious_heavy;
+}
+
+.f-p-d span {
+	color: $dark_gray;
+	font-family: $delicious_heavy;
+}
+
 .dark_gray {
 	color: $dark_gray;
 }

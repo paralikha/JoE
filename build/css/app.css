@@ -9034,6 +9034,16 @@ p {
   color: #6e266f;
 }
 
+.f-p span {
+  color: #6e266f;
+  font-family: "delicious", Arial, Helvetica, sans-serif;
+}
+
+.f-p-d span {
+  color: #373636;
+  font-family: "delicious", Arial, Helvetica, sans-serif;
+}
+
 .dark_gray {
   color: #373636;
 }
@@ -9641,6 +9651,10 @@ section#about_us {
 .about_box .about_tab .j_1 img {
   width: 100%;
   max-width: 150px;
+}
+.about_box .o-a {
+  max-height: 400px;
+  overflow: auto;
 }
 .about_box .nav-tabs {
   border-bottom: none;
