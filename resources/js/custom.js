@@ -7,17 +7,19 @@ function() {
 });
 
 // NiceScroll
-$(document).ready(
-    function() { 
-        $("html").niceScroll();
-    }
-);
-
-$(document).ready(
-    function() { 
-        $(".o-a").niceScroll();
-    }
-);
+$(document).ready(function () {
+    $("html").niceScroll({
+        cursorborder: "0",
+        autohidemode: false,
+        cursorminheight: 30
+    });
+    $(".o-a").niceScroll({
+        cursorborder: "0",
+        autohidemode: false,
+        cursorminheight: 30
+    });
+    $('#ascrail2000').show();
+});
 
 // lightSlider
 $(document).ready(function() {

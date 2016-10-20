@@ -17,12 +17,14 @@ function() {
 $(document).ready(
     function() { 
         $("html").niceScroll();
+        autohidemode: false,
     }
 );
 
 $(document).ready(
     function() { 
         $(".o-a").niceScroll();
+        autohidemode: false,
     }
 );
 
