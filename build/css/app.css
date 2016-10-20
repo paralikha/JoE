@@ -9011,7 +9011,8 @@ p {
 }
 
 .wrapper {
-  padding: 60px 30px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   margin: 0 auto;
   transition: all .2s linear;
   transition: 0.4s;
@@ -9262,21 +9263,33 @@ p {
   background: #fdbe3c;
 }
 
+.nav_yellow {
+  font-family: "delicious", Arial, Helvetica, sans-serif;
+}
+
 .about_box.home {
   padding: 40px;
+}
+.about_box.home .bg-dg {
+  background-image: url("../resources/images/pattern-dg.png") !important;
 }
 
 .hero_box {
   border-top: 5px solid #6e266f;
   padding: 25px 15px 15px 15px;
   margin-bottom: 30px;
-  min-height: 370px;
-  background-image: url("../resources/images/pattern.png") !important;
+  min-height: 330px;
+}
+.hero_box p {
+  line-height: 22px;
+}
+.hero_box .font_del {
+  font-family: "delicious", Arial, Helvetica, sans-serif;
 }
 .hero_box h2:first-child {
   color: #373636;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  font-size: 30px;
 }
 .hero_box h2:first-child span {
   font-size: 40px;
@@ -9288,7 +9301,7 @@ p {
 }
 .hero_box .second {
   color: #ffffff;
-  padding: 10px;
+  padding: 20px;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -9307,6 +9320,12 @@ p {
   color: #373636;
   border-radius: 0.25em;
   padding: 5px 10px;
+}
+.hero_box-gray {
+  background-image: url("../resources/images/pattern-g.png") !important;
+}
+.hero_box-yellow {
+  background-image: url("../resources/images/pattern-y.png") !important;
 }
 
 .no_pattern {
@@ -9337,6 +9356,7 @@ p {
 .hero_bottom .hero_text {
   padding: 10px;
   position: relative;
+  min-height: 100px;
 }
 .hero_bottom .hero_text img {
   max-width: 150px;
@@ -9344,6 +9364,11 @@ p {
 .hero_bottom .hero_text h1 {
   width: 70%;
   float: left;
+  text-transform: none !important;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
 }
 
 #phases {
@@ -9575,12 +9600,16 @@ p {
   color: #ffffff;
   font-size: 25px;
 }
+.carousel_animate p span {
+  background: #6e266f;
+}
 
 section#about_us {
   background: url(../resources/images/rocket_1.png) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
   position: relative;
+  background-position: center top;
 }
 
 .about_box {

@@ -1,18 +1,29 @@
 .about_box.home {
 	padding: 40px;
+
+	.bg-dg {
+		background-image: url('../resources/images/pattern-dg.png') !important;
+	}
 }
 
 .hero_box {
     border-top: 5px solid $primary;
     padding: 25px 15px 15px 15px;
     margin-bottom: 30px;
-    min-height: 370px;
-    background-image: url('../resources/images/pattern.png') !important;
+    min-height: 330px;
+
+    p {
+    	line-height: 22px;
+    }
+
+    .font_del {
+    	font-family: $delicious_heavy;
+    }
 
     h2:first-child {
     	color: $dark_gray;
     	margin-bottom: 20px;
-    	text-transform: uppercase;
+    	font-size: 30px;
 
     	span {
     		font-size: 40px;
@@ -27,7 +38,7 @@
 
     .second {
     	color: $white;
-	    padding: 10px;
+	    padding: 20px;
 	    display: inline-block;
 	    margin-bottom: 20px;
 	    
@@ -49,6 +60,14 @@
 	    color: $dark_gray;
 	    border-radius: 0.25em;
 	    padding: 5px 10px;
+	}
+
+	&-gray {
+   		background-image: url('../resources/images/pattern-g.png') !important;
+	}
+
+	&-yellow {
+   		background-image: url('../resources/images/pattern-y.png') !important;
 	}
 }
 
@@ -85,6 +104,7 @@
 	.hero_text {
 	    padding: 10px;
    		position: relative;
+   		min-height: 100px;
 
 	    img {
     		max-width: 150px;
@@ -92,7 +112,12 @@
 
 	    h1 {
 	    	width: 70%;
-    		float: left;
+		    float: left;
+		    text-transform: none !important;
+		    position: absolute;
+		    top: 50%;
+		    left: 40%;
+		    transform: translate(-50%, -50%);
 	    }
 	}
 }
@@ -375,5 +400,9 @@
 	p {
 		color: $white;
 		font-size: 25px;
+
+		span {
+			background: $primary;
+		}
 	}
 }
