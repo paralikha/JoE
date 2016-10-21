@@ -13,12 +13,15 @@ $(document).ready(function () {
         autohidemode: false,
         cursorminheight: 30
     });
+    $('#ascrail2000').show(); 
+});
+
+$(document).ready(function () {
     $(".o-a").niceScroll({
         cursorborder: "0",
-        autohidemode: false,
+        autohidemode: true,
         cursorminheight: 30
     });
-    $('#ascrail2000').show();
 });
 
 // lightSlider

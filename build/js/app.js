@@ -14,19 +14,22 @@ function() {
 });
 
 // NiceScroll
-$(document).ready(
-    function() { 
-        $("html").niceScroll();
+$(document).ready(function () {
+    $("html").niceScroll({
+        cursorborder: "0",
         autohidemode: false,
-    }
-);
+        cursorminheight: 30
+    });
+    $('#ascrail2000').show(); 
+});
 
-$(document).ready(
-    function() { 
-        $(".o-a").niceScroll();
-        autohidemode: false,
-    }
-);
+$(document).ready(function () {
+    $(".o-a").niceScroll({
+        cursorborder: "0",
+        autohidemode: true,
+        cursorminheight: 30
+    });
+});
 
 // lightSlider
 $(document).ready(function() {
